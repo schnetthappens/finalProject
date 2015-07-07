@@ -3,10 +3,16 @@ $box-sizing: true;
 
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import 'bower_components/neat/app/assets/stylesheets/neat';
-@import 'typography';
-@import 'colors';
-@import 'buttons';
+@import 'partials/typography';
+@import 'partials/colors';
+@import 'partials/buttons';
 
 body {
   font-size: 62.5%;
+}
+
+.header-container {
+  @include outer-container(1080px);
+  height: 300px;
+  background-color: $primary-color;
 }
