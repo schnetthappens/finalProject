@@ -6,3 +6,7 @@ $box-sizing: true;
 @import 'typography';
 @import 'colors';
 @import 'buttons';
+
+body {
+  font-size: 62.5%;
+}
