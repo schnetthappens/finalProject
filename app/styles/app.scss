@@ -9,6 +9,8 @@ $box-sizing: true;
 
 body {
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
 //HEADER and all ELEMENTS
@@ -20,7 +22,12 @@ body {
 
   .header-text-wrapper {
     @include outer-container(1080px);
+    width: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
+
 
 .how-it-works-container {
   background-color: #fff;
@@ -29,11 +36,13 @@ body {
 .how-it-works-heading-wrapper,
 .how-it-works-list {
   @include outer-container(1080px);
+  list-style: none;
 }
 
-  .how-it-works-step {
-    @include span-columns(3);
-    @include omega;
-  }
+    .how-it-works-info {
+      @include span-columns(8);
+    }
 
-    
+    .how-it-works-icon{
+      @include span-columns(4);
+    }

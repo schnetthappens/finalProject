@@ -7,15 +7,19 @@ $primary-font-family: 'Roboto', sans-serif;
 
 //HEADER TEXT
 
-.header-text-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
   .primary-heading{
     font-family: $primary-font-family;
     font-size: 4em;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
+  .primary-subheading {
+    font-family: $primary-font-family;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0.5em 0;
     text-align: center;
   }
 
@@ -23,6 +27,7 @@ $primary-font-family: 'Roboto', sans-serif;
     font-family: $primary-font-family;
     font-size: 2em;
     text-align: center;
+    line-height: 2em;
   }
 
 .how-it-works-heading {
@@ -37,9 +42,11 @@ $primary-font-family: 'Roboto', sans-serif;
   font-family: $primary-font-family;
   font-size: 2.5em;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 .how-it-works-text {
   font-family: $primary-font-family;
   font-size: 1.6em;
+  line-height: 2em;
 }
