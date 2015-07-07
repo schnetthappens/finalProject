@@ -1,1 +1,45 @@
 
+//FONTS
+$primary-font-family: 'Roboto', sans-serif;
+
+
+
+
+//HEADER TEXT
+
+.header-text-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+  .primary-heading{
+    font-family: $primary-font-family;
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .primary-header-text {
+    font-family: $primary-font-family;
+    font-size: 2em;
+    text-align: center;
+  }
+
+.how-it-works-heading {
+  font-family: $primary-font-family;
+  font-size: 5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.how-it-works-title {
+  font-family: $primary-font-family;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.how-it-works-text {
+  font-family: $primary-font-family;
+  font-size: 1.6em;
+}

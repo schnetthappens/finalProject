@@ -11,8 +11,29 @@ body {
   font-size: 62.5%;
 }
 
+//HEADER and all ELEMENTS
+
 .header-container {
-  @include outer-container(1080px);
-  height: 300px;
   background-color: $primary-color;
+  height: 400px;
 }
+
+  .header-text-wrapper {
+    @include outer-container(1080px);
+  }
+
+.how-it-works-container {
+  background-color: #fff;
+}
+
+.how-it-works-heading-wrapper,
+.how-it-works-list {
+  @include outer-container(1080px);
+}
+
+  .how-it-works-step {
+    @include span-columns(3);
+    @include omega;
+  }
+
+    
