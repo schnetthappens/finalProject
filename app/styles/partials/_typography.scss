@@ -58,6 +58,7 @@
 // USERS-CREATE
 // SESSIONS-CREATE
 
+.connect-payment-heading,
 .create-account,
 .login-heading {
   font-family: $heading-font-family;
@@ -68,6 +69,7 @@
   text-align: center;
 }
 
+.connect-payment-text,
 .create-account-text,
 .login-text {
   width: 80%;

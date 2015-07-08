@@ -1,0 +1,39 @@
+.connect-payment-container {
+  @include outer-container(1080px);
+}
+
+.stripe-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.stripe-button-el {
+  display: block !important;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+
+  .login-form {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid $primary-app-color;
+    border-radius: 8px;
+  }
+
+}
+
+
+//mobile size
+@media screen and (max-width: 599px) {
+
+    .login-form {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid $primary-app-color;
+      border-radius: 8px;
+    }
+
+
+}
