@@ -1,19 +1,7 @@
 
-//FONTS
-$heading-font-family: 'Oswald', sans-serif;
-$paragraph-font-family: 'Roboto', sans-serif;
+//LANDING
 
-
-//FONT COLORS
-$heading-text-color: #A5C663;
-$subheading-color: #453333;
-$paragraph-text-color: #808080;
-
-
-//LANDING-PAGE
-
-//primary heading area
-.primary-heading{
+.primary-heading {
   font-family: $heading-font-family;
   font-size: 5em;
   font-weight: 300;
@@ -63,5 +51,28 @@ $paragraph-text-color: #808080;
   font-family: $paragraph-font-family;
   font-size: 1.8em;
   color: $paragraph-text-color;
+  line-height: 2em;
+}
+
+
+//USERS/CREATE
+
+.create-account {
+  font-family: $heading-font-family;
+  font-size: 5em;
+  font-weight: 300;
+  color: $heading-text-color;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.create-account-text {
+  width: 80%;
+  font-family: $paragraph-font-family;
+  font-size: 1.8em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  color: $paragraph-text-color;
+  text-align: center;
   line-height: 2em;
 }

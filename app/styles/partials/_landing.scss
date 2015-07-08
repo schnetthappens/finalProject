@@ -44,6 +44,7 @@ $primary-color: #A5C663;
 
         .how-it-works-text {
           width: 100%;
+          margin: 0 auto;
           font-size: 2em;
         }
 
@@ -80,7 +81,12 @@ $primary-color: #A5C663;
   }
 
   .how-it-works-info {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
   }
+
+    .how-it-works-title {
+      width: 90%;
+      margin: 0 auto;
+    }
 }
