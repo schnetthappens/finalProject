@@ -1,35 +1,39 @@
 
 //FONTS
-$primary-font-family: 'Roboto', sans-serif;
+$heading-font-family: 'Oswald', sans-serif;
+$paragraph-font-family: 'Roboto', sans-serif;
+
 
 //FONT COLORS
-$primary-heading-color: #fff;
-$primary-subheading-color: #453333;
+$heading-text-color: #A5C663;
+$subheading-color: #453333;
+$paragraph-text-color: #808080;
 
 
 //LANDING-PAGE
 
 //primary heading area
 .primary-heading{
-  font-family: $primary-font-family;
-  font-size: 4em;
+  font-family: $heading-font-family;
+  font-size: 5em;
+  font-weight: 300;
   color: #fff;
   margin: 0.5em 0;
   text-align: center;
 }
 
 .primary-subheading {
-  font-family: $primary-font-family;
+  font-family: $paragraph-font-family;
   font-size: 3em;
   font-weight: 300;
-  color: $primary-subheading-color;
+  color: $subheading-color;
   margin: 0.5em 0;
   text-align: center;
   line-height: 1.3em;
 }
 
 .primary-header-text {
-  font-family: $primary-font-family;
+  font-family: $paragraph-font-family;
   font-size: 2em;
   text-align: center;
   line-height: 2em;
@@ -38,23 +42,26 @@ $primary-subheading-color: #453333;
 
 //how it works section
 .how-it-works-heading {
-  font-family: $primary-font-family;
+  font-family: $heading-font-family;
   font-size: 5em;
-  font-weight: 300;
+  font-weight: 500;
+  color: #A5C663;
   text-transform: uppercase;
   text-align: center;
 }
 
 .how-it-works-title {
-  font-family: $primary-font-family;
+  font-family: $paragraph-font-family;
   font-size: 2.5em;
-  font-weight: 500;
+  font-weight: 300;
+  color: $heading-text-color;
   line-height: 1.5em;
 }
 
 .how-it-works-text {
   width: 80%;
-  font-family: $primary-font-family;
+  font-family: $paragraph-font-family;
   font-size: 1.6em;
+  color: $paragraph-text-color;
   line-height: 2em;
 }
