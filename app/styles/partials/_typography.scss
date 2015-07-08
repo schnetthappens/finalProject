@@ -55,9 +55,11 @@
 }
 
 
-//USERS/CREATE
+// USERS-CREATE
+// SESSIONS-CREATE
 
-.create-account {
+.create-account,
+.login-heading {
   font-family: $heading-font-family;
   font-size: 5em;
   font-weight: 300;
@@ -66,7 +68,8 @@
   text-align: center;
 }
 
-.create-account-text {
+.create-account-text,
+.login-text {
   width: 80%;
   font-family: $paragraph-font-family;
   font-size: 1.8em;
