@@ -2,7 +2,11 @@
   <div class="header-text-wrapper">
     <h2 class="primary-heading">Teams not entering their time every day?</h2>
     <h3 class="primary-subheading">Name creates real (but totally awesome) consequences when your employees conveniently "forget" to enter their time.</h3>
-    <button class="go-to-demo pure-button pure-button-primary" {{action 'tryDemo'}}>try demo</button>
+
+    {{#link-to 'users.create'}}
+    <button class="go-to-demo pure-button pure-button-primary">try demo</button>
+    {{/link-to}}
+
   </div>
 </section>
 
