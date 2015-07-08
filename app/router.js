@@ -11,6 +11,10 @@ Router.map(function() {
   this.route('users', function() {
     this.route('create');
   });
+
+  this.route('sessions', function() {
+    this.route('create');
+  });
 });
 
 export default Router;
