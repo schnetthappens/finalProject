@@ -19,27 +19,69 @@ $primary-color: #A5C663;
     transform: translateY(-50%);
   }
 
-.how-it-works-container {
-  background-color: #fff;
-}
-
-  .how-it-works-heading-wrapper,
-  .how-it-works-list {
-    @include outer-container(1080px);
-    padding-left: 0;
-    list-style: none;
+  .how-it-works-container {
+    background-color: #fff;
   }
 
-    .how-it-works-info {
-      @include span-columns(6);
+  .how-it-works-heading-wrapper {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid grey;
+    padding-left: 0;
+    list-style: none;
+    overflow: auto;
+  }
+
+    .how-it-works-list {
+      @include outer-container(720px);
+      padding-left: 0;
+      list-style: none;
     }
 
-      .how-it-works-info {
-        margin-bottom: 5em;
+      .how-it-works-step {
+        @include span-columns(12);
+        margin: 3em auto;
+        text-align: center;
       }
 
-    .harvest-logo,
-    .stripe-logo {
-      width: 40%;
-      margin-bottom: 0;
+        .how-it-works-text {
+          width: 100%;
+          font-size: 2em;
+        }
+
+
+
+//tablet size
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+
+  .header-text-wrapper {
+    width: 80%;
+  }
+
+  .how-it-works-step {
+    @include span-columns(12);
+    width: 100%;
+    display: block;
+    margin: 3em auto;
+    text-align: center;
+  }
+
+    .how-it-works-text {
+      max-width: 80%;
+      margin: 0 auto;
+      font-size: 2em;
     }
+
+}
+
+@media screen and (max-width: 599px) {
+
+  .header-container {
+    height: 550px;
+  }
+
+  .how-it-works-info {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
