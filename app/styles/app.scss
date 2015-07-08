@@ -1,11 +1,17 @@
 $gutter: 0em;
 $box-sizing: true;
 
+//BOURBON & NEAT
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import 'bower_components/neat/app/assets/stylesheets/neat';
+
+//STYLE PARTIALS
 @import 'partials/typography';
 @import 'partials/buttons';
+
+//COMPONENT STYLES
 @import 'partials/landing';
+@import 'partials/users-create';
 
 body {
   font-size: 62.5%;

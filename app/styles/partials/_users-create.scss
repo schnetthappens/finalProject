@@ -1,0 +1,9 @@
+
+.create-user-container {
+  @include outer-container(1080px);
+  border: 1px solid gray;
+}
+
+  .create-user {
+    margin: 0 auto;
+  }
