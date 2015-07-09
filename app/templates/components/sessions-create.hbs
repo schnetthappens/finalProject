@@ -6,14 +6,15 @@
 <form class="login-form pure-form pure-form-aligned">
   <fieldset>
     <div class="input-wrapper pure-control-group">
-      <input class="email" type="email" placeholder="Email Address">
+      {{input class="email" value=identification placeholder='Email Address'}}
     </div>
     <div class="input-wrapper pure-control-group">
-      <input class="password" type="password" placeholder="Password">
+      {{input class="password" value=password placeholder='Email Address'}}
     </div>
   </fieldset>
-  <button class="go-to-demo pure-button pure-button-primary">log in</button>
+  <button class="go-to-demo pure-button pure-button-primary" {{action 'authenticate'}}>log in</button>
 </form>
+
 
 
 

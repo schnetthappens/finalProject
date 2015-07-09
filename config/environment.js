@@ -22,10 +22,15 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self'",
       'font-src': "'self' fonts.gstatic.com",
-      'connect-src': "'self'",
+      'connect-src': "'self' api.parse.com",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
       'media-src': "'self'"
+    },
+
+    'simple-auth': {
+      authorizer: 'authorizer:parse',
+      crossOriginWhitelist: ['https://api.parse.com']
     }
   };
 

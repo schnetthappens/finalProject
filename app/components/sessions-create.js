@@ -1,6 +1,10 @@
 import Ember from 'ember';
+import LoginControllerMixin from 'simple-auth/mixins/login-controller-mixin';
 
-export default Ember.Component.extend({
+export default Ember.Component.extend(LoginControllerMixin, {
   tagName: 'div',
-  classNames: ['login-container']
+  classNames: ['login-container'],
+
+  authenticator: 'authenticator:parse-username'
+
 });
