@@ -1,0 +1,6 @@
+
+{{#if session.isAuthenticated}}
+  <button class="go-to-demo pure-button pure-button-primary" type="submit" {{action 'invalidateSession'}}>log out</button>
+{{/if}}
+
+{{yield}}
