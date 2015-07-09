@@ -4,25 +4,22 @@
 
 </div>
 
-<form class="create-user-form pure-form pure-form-aligned">
+<form class="create-user-form pure-form pure-form-aligned" {{action 'createUser' on='submit'}}>
   <fieldset>
     <div class="input-wrapper pure-control-group">
-      <input class="name" type="text" placeholder="Your name">
+      {{input class="name" type="text" value=model.name placeholder='Your name'}}
     </div>
     <div class="input-wrapper pure-control-group">
-      <input class="org-name" type="text" placeholder="Company name">
+      {{input class="org-name" type="text" value=model.company placeholder='Company name'}}
     </div>
     <div class="input-wrapper pure-control-group">
-      <input class="email" type="email" placeholder="Email Address">
+      {{input class="email" type="email" value=model.username placeholder='Email address'}}
     </div>
     <div class="input-wrapper pure-control-group">
-      <input class="password" type="password" placeholder="Password">
+      {{input class="password" type="password" value=model.password placeholder='Password'}}
     </div>
   </fieldset>
-  {{#link-to 'onboarding.pay'}}
-  <button class="go-to-demo pure-button pure-button-primary">sign up</button>
-  {{/link-to}}
-
+  <button class="go-to-demo pure-button pure-button-primary" type="submit">sign up</button>
   {{link-to 'Already have an account?' 'sessions.create'}}
 </form>
 
