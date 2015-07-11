@@ -4,6 +4,7 @@ $button-border-radius: 5px;
 
 
 //HEADER
+.go-to-harvest,
 .go-to-demo,
 .connect-account {
   font-size: 200%;
@@ -12,6 +13,10 @@ $button-border-radius: 5px;
   border-radius: $button-border-radius;
   text-transform: uppercase;
   text-align: center;
+}
+
+.go-to-harvest {
+  background-color: #F47917;
 }
 
 a {

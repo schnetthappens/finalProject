@@ -50,6 +50,7 @@
   width: 80%;
   font-family: $paragraph-font-family;
   font-size: 1.8em;
+  font-weight: 100;
   color: $paragraph-text-color;
   line-height: 2em;
 }
@@ -58,6 +59,7 @@
 // USERS-CREATE
 // SESSIONS-CREATE
 
+.current-user-heading,
 .connect-payment-heading,
 .create-account,
 .login-heading {
@@ -69,15 +71,28 @@
   text-align: center;
 }
 
+.current-user-text,
 .connect-payment-text,
 .create-account-text,
 .login-text {
   width: 80%;
   font-family: $paragraph-font-family;
   font-size: 1.8em;
+  font-weight: 100;
   margin: 0 auto;
   margin-bottom: 2em;
+  margin-top: 2em;
   color: $paragraph-text-color;
   text-align: center;
   line-height: 2em;
+}
+
+
+
+.sign-out {
+  font-family: $paragraph-font-family;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
 }

@@ -1,6 +1,18 @@
 
-{{#if session.isAuthenticated}}
-  <button class="go-to-demo pure-button pure-button-primary" type="submit" {{action 'invalidateSession'}}>log out</button>
-{{/if}}
+<div class="current-user-page-header">
+  {{#if session.isAuthenticated}}
+    <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out, {{model.name}}</a>
+  {{/if}}
+</div>
+
+<div class="current-user-text-container">
+  <img class="gdi-logo" src="assets/images/gdi_logo.png" alt="" />
+  <h2 class="primary-heading current-user-heading">Awww yeeeah!</h2>
+  <h3 class="primary-subheading current-user-name">{{model.company}} has teamed up with Girl Develop It!</h3>
+  <p class="current-user-text">When you don't enter your time, Girl Develop It wins!. At the end of each month, {{model.company}} will match the total dollar amount and donate all proceeds to Girl Develop It. Connect your Harvest account now and get started!</p>
+  <button class="go-to-harvest pure-button pure-button-primary" type="submit">connect harvest</button>
+</div>
+
+
 
 {{yield}}
