@@ -1,3 +1,9 @@
+<div class="current-user-page-header">
+  {{#if session.isAuthenticated}}
+    <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out, {{model.name}}</a>
+  {{/if}}
+</div>
+
 <div class="connect-payment-text-container">
   <h2 class="primary-heading connect-payment-heading">Setup payment</h2>
   <p class="connect-payment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

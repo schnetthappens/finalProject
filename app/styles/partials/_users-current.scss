@@ -1,65 +1,28 @@
 
-
-.current-user-page-header {
-  height: 80px;
-  background-color: $primary-app-color;
-  overflow: auto;
+.create-user-container {
+  @include outer-container(1080px);
 }
 
-.create-user-form {
-  width: 80%;
-  margin: 0 auto;
-  border: 1px solid $primary-app-color;
-  border-radius: 8px;
-}
-
-  .create-user-form fieldset {
-    margin-top: 2em;
+  .current-user-text-container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 
-  .input-wrapper {
-    margin: 1em auto;
-    text-align: center;
+  .gdi-logo {
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5em;
+    filter: grayscale(100%);
   }
-
-    .name,
-    .org-name,
-    .username,
-    .password,
-    .email {
-      width: 70%;
-      height: 5em;
-      margin: 0 auto;
-    }
 
 
 @media screen and (min-width: 600px) and (max-width: 980px) {
 
-  .create-user-form {
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid $primary-app-color;
-    border-radius: 8px;
+  .gdi-logo {
+    max-width: 40%;
   }
-
-    .create-user-form fieldset {
-      margin-top: 2em;
-    }
-
-    .input-wrapper {
-      margin: 1em auto;
-      text-align: center;
-    }
-
-      .name,
-      .org-name,
-      .username,
-      .password,
-      .email {
-        width: 70%;
-        height: 5em;
-        margin: 0 auto;
-      }
 
 }
 
@@ -67,30 +30,8 @@
 //mobile size
 @media screen and (max-width: 599px) {
 
-    .create-user-form {
-      width: 80%;
-      margin: 0 auto;
-      border: 1px solid $primary-app-color;
-      border-radius: 8px;
-    }
-
-      .create-user-form fieldset {
-        margin-top: 2em;
-      }
-
-        .input-wrapper {
-          margin: 1em auto;
-          text-align: center;
-        }
-
-        .name,
-        .org-name,
-        .username,
-        .password,
-        .email {
-          width: 70%;
-          height: 5em;
-          margin: 0 auto;
-        }
+  .gdi-logo {
+    max-width: 40%;
+  }
 
 }

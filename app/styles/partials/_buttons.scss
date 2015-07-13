@@ -8,15 +8,17 @@ $button-border-radius: 5px;
 .go-to-demo,
 .connect-account {
   font-size: 200%;
-  margin: 2em auto;
+  width: 70%;
+  margin: 1em auto;
   display: block;
   border-radius: $button-border-radius;
   text-transform: uppercase;
   text-align: center;
 }
 
-.go-to-harvest {
-  background-color: #F47917;
+.go-to-demo {
+  margin: 2em auto;
+  max-width: 50%;
 }
 
 a {
