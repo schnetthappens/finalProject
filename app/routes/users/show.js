@@ -4,16 +4,16 @@ import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixi
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
   model: function(){
     var token = window.location.hash.match(/access_token=([^&]+)/)[1];
-    console.log(token);
       return Ember.$.ajax({
-        url: 'https://api.harvestapp.com/account/schnetthappens?access_token='+token,
-        type: 'GET',
-        contentType: 'application/json',
-        dataType: 'json'
-      }).then(function(results) {
-          console.log(results);
+        url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/account/who_am_i?access_token='+token,
+        dataType: 'jsonp'
+      }).then(function(response) {
+        console.log(response);
+        return response;
+      }, function(xhr, status, error) {
+        console.log(error);
       });
-  },
+    },
 
   actions: {
     invalidateSession: function() {

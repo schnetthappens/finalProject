@@ -20,12 +20,13 @@ module.exports = function(environment) {
 
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self'",
+      'script-src': "'self' 'unsafe-eval'",
       'font-src': "'self' fonts.gstatic.com",
-      'connect-src': "'self' api.parse.com api.harvestapp.com",
+      'connect-src': "'self' api.parse.com api.harvestapp.com https://jsonp.afeld.me",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
-      'media-src': "'self'"
+      'media-src': "'self'",
+      'frame-src': "'self' checkout.stripe.com"
     },
 
     'simple-auth': {
