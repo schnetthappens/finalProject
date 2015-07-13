@@ -6,7 +6,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     var token = window.location.hash.match(/access_token=([^&]+)/)[1];
     console.log(token);
       return Ember.$.ajax({
-        url: 'https://example.harvestapp.com/account/schnetthappens?access_token='+token,
+        url: 'https://api.harvestapp.com/account/schnetthappens?access_token='+token,
         type: 'GET',
         contentType: 'application/json',
         dataType: 'json'

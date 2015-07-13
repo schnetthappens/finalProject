@@ -17,6 +17,10 @@ export default Ember.Component.extend({
   },
 
   actions: {
+    invalidateSession: function(){
+      this.sendAction('action', this.get('model'));
+    },
+
     checkout: function() {
       this.handler.open({
         name: "Cool Company",
