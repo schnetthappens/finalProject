@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'script-src': "'self' 'unsafe-eval'",
       'font-src': "'self' fonts.gstatic.com",
       'connect-src': "'self' api.parse.com api.harvestapp.com https://jsonp.afeld.me",
-      'img-src': "'self'",
+      'img-src': "'self' proxy.harvestfiles.com",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
       'media-src': "'self'",
       'frame-src': "'self' checkout.stripe.com"

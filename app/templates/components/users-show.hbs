@@ -1,3 +1,5 @@
+{{log model}}
+
 <div class="current-user-page-header">
   {{#if session.isAuthenticated}}
     <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out, {{model.name}}</a>
@@ -5,12 +7,13 @@
 </div>
 
 <div class="connect-payment-text-container">
-  <h2 class="primary-heading connect-payment-heading">Setup payment</h2>
+  <h2 class="primary-heading connect-payment-heading">Almost finished,<br>{{model.first_name}}!</h2>
+  <img class="user-avatar" src="{{model.avatar_url}}" alt="" />
   <p class="connect-payment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 
 <form class="stripe-form" {{action 'checkout' on='submit'}}>
-  <button class="connect-account pure-button pure-button-primary">Connect Account</button>
+  <button class="connect-account pure-button pure-button-primary">authorize account</button>
 </form>
 
 

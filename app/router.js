@@ -17,10 +17,6 @@ Router.map(function() {
   this.route('sessions', function() {
     this.route('create');
   });
-
-  this.route('onboarding', function() {
-    this.route('pay');
-  });
 });
 
 export default Router;
