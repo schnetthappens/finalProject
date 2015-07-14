@@ -1,15 +1,15 @@
-{{log model.user}}
-{{log model.entries}}
+<!-- {{log model.data.user}}
+{{log model.entries}} -->
 
 <div class="current-user-page-header">
   {{#if session.isAuthenticated}}
-    <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out, {{model.name}}</a>
+    <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out, {{model.user}}</a>
   {{/if}}
 </div>
 
 <div class="connect-payment-text-container">
-  <h2 class="primary-heading connect-payment-heading">Almost finished,<br>{{model.first_name}}!</h2>
-  <img class="user-avatar" src="{{model.avatar_url}}" alt="" />
+  <h2 class="primary-heading connect-payment-heading">Almost finished,<br>{{model.data.user.first_name}}!</h2>
+  <img class="user-avatar" src="{{model.data.user.avatar_url}}" alt="" />
   <p class="connect-payment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 
