@@ -7,8 +7,7 @@
 </div>
 
 <div class="user-show-text-container">
-  <h2 class="primary-heading user-show-heading">Awww yeeahh,<br>{{model.data.user.first_name}}!</h2>
-  <img class="user-avatar" src="{{model.data.user.avatar_url}}" alt="" />
+  <h2 class="primary-heading user-show-heading">Thanks, {{model.data.user.first_name}}!<br>That was easy.</h2>
   <p class="user-show-text">You're only step away from joining the rest of the {{model.data.company.name}} team on TimeKeep!</p>
 </div>
 
@@ -16,9 +15,11 @@
   <ul class="user-show-entries-list">
     {{#each model.entries.day_entries as |entry|}}
     <li class="entry">
-      <h2 class="entry-project">{{entry.client}}></h2>
-      <h4 class="entry-client"></h4>
-      <span class="entry-hours"></span>
+      <div class="entry-wrapper">
+        <h2 class="entry-project">{{entry.project}}</h2>
+        <h4 class="entry-client">{{entry.client}}</h4>
+        <span class="entry-hours">{{entry.hours}}</span>
+      </div>
     </li>
     {{/each}}
   </ul>
