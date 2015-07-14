@@ -11,7 +11,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
         }),
 
         entries: Ember.$.ajax({
-          url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/daily/?access_token='+token,
+          url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/daily/194/2015?access_token='+token,
           dataType: 'jsonp'
         })
       });

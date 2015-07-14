@@ -1,5 +1,11 @@
-.connect-payment-container {
+.users-show-container {
   @include outer-container(1080px);
+}
+
+.user-show-page-header {
+  height: 80px;
+  background-color: $primary-app-color;
+  overflow: auto;
 }
 
 .stripe-form {

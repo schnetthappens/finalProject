@@ -3,6 +3,12 @@
   @include outer-container(1080px);
 }
 
+  .current-user-page-header {
+    height: 80px;
+    background-color: $primary-app-color;
+    overflow: auto;
+  }
+
   .current-user-text-container {
     width: 80%;
     margin: 0 auto;

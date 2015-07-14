@@ -1,20 +1,34 @@
-<!-- {{log model.data.user}}
-{{log model.entries}} -->
+{{log model.entries.day_entries}}
 
-<div class="current-user-page-header">
+<div class="user-show-page-header">
   {{#if session.isAuthenticated}}
-    <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out, {{model.user}}</a>
+    <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out</a>
   {{/if}}
 </div>
 
-<div class="connect-payment-text-container">
-  <h2 class="primary-heading connect-payment-heading">Almost finished,<br>{{model.data.user.first_name}}!</h2>
+<div class="user-show-text-container">
+  <h2 class="primary-heading user-show-heading">Awww yeeahh,<br>{{model.data.user.first_name}}!</h2>
   <img class="user-avatar" src="{{model.data.user.avatar_url}}" alt="" />
-  <p class="connect-payment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p class="user-show-text">You're only step away from joining the rest of the {{model.data.company.name}} team on TimeKeep!</p>
+</div>
+
+<div class="user-show-latest-entry">
+  <ul class="user-show-entries-list">
+    {{#each model.entries.day_entries as |entry|}}
+    <li class="entry">
+      <h2 class="entry-project">{{entry.client}}></h2>
+      <h4 class="entry-client"></h4>
+      <span class="entry-hours"></span>
+    </li>
+    {{/each}}
+  </ul>
+
+
+
 </div>
 
 <form class="stripe-form" {{action 'checkout' on='submit'}}>
-  <button class="connect-account pure-button pure-button-primary">authorize account</button>
+  <button class="connect-account pure-button pure-button-primary">connect payment</button>
 </form>
 
 

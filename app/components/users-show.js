@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'div',
-  classNames: ['connect-payment-container'],
+  classNames: ['users-show-container'],
 
   didInsertElement: function(){
     this.handler = StripeCheckout.configure({
