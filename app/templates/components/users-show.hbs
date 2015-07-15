@@ -6,31 +6,37 @@
   {{/if}}
 </div>
 
-<div class="user-show-text-container">
-  <h2 class="primary-heading user-show-heading">Thanks, {{model.data.user.first_name}}!<br>That was easy.</h2>
-  <p class="user-show-text">You're only step away from joining the rest of the {{model.data.company.name}} team on TimeKeep!</p>
+<div class="user-show-content-container">
+  <div class="user-show-text-container">
+    <h2 class="primary-heading user-show-heading">Thanks, {{model.data.user.first_name}}!<br>That was easy.</h2>
+    <img class="entry-avatar" src="{{model.data.user.avatar_url}}" alt="" />
+    <p class="user-show-text-success">You've been added to the {{model.data.company.name}} team on TimeSweep. By the way, it looks like someone (that's you) entered their time yesterday!</p>
+  </div>
+
+  <div class="user-show-latest-entry">
+    <ul class="user-show-entries-list">
+      {{#each model.entries.day_entries as |entry|}}
+      <li class="entry">
+        <div class="entry-wrapper">
+          <h2 class="entry-project">{{entry.project}}</h2>
+          <h4 class="entry-client">{{entry.client}}</h4>
+          <h3 class="entry-hours">{{entry.hours}}</h3>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="user-show-">
+
+  </div>
+  <p class="user-show-text-next">For those times when you do forget to enter your time, well, there's just one more step.</p>
+
+  <form class="stripe-form" {{action 'checkout' on='submit'}}>
+    <button class="connect-account pure-button pure-button-primary">connect payment</button>
+  </form>
 </div>
 
-<div class="user-show-latest-entry">
-  <ul class="user-show-entries-list">
-    {{#each model.entries.day_entries as |entry|}}
-    <li class="entry">
-      <div class="entry-wrapper">
-        <h2 class="entry-project">{{entry.project}}</h2>
-        <h4 class="entry-client">{{entry.client}}</h4>
-        <span class="entry-hours">{{entry.hours}}</span>
-      </div>
-    </li>
-    {{/each}}
-  </ul>
-
-
-
-</div>
-
-<form class="stripe-form" {{action 'checkout' on='submit'}}>
-  <button class="connect-account pure-button pure-button-primary">connect payment</button>
-</form>
 
 
 {{yield}}

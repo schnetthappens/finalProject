@@ -72,7 +72,8 @@
 }
 
 .current-user-text,
-.user-show-text,
+.user-show-text-success,
+.user-show-text-next,
 .create-account-text,
 .login-text {
   width: 80%;
@@ -95,4 +96,32 @@
   text-decoration: none;
   font-size: 1.3em;
   color: #fff;
+}
+
+
+
+.user-show-text {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.entry-project {
+  font-family: $paragraph-font-family;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: $subheading-color;
+}
+
+.entry-client {
+  font-family: $paragraph-font-family;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: $paragraph-text-color;
+}
+
+.entry-hours {
+  font-family: $paragraph-font-family;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: $paragraph-text-color;
 }
