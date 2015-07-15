@@ -1,7 +1,4 @@
 
-.create-user-container {
-  @include outer-container(1080px);
-}
 
   .current-user-page-header {
     height: 80px;
@@ -10,18 +7,34 @@
   }
 
   .current-user-text-container {
+    @include outer-container(920px);
     width: 80%;
     margin: 0 auto;
     border-radius: 8px;
   }
 
-  .gdi-logo {
-    max-width: 30%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 5em;
-    filter: grayscale(100%);
+    .current-user-orgs-heading-wrapper {
+      background-color: #F7F7F7;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      padding-left: 0;
+      list-style: none;
+      overflow: auto;
+    }
+
+  .current-user-orgs {
+    @include outer-container(920px);
+    margin-top: 4em;
   }
+
+    .org {
+      @include span-columns(6 of 12);
+      @include omega(4n);
+      margin: 0 auto;
+      filter: grayscale(100%);
+    }
+
+
 
 
 @media screen and (min-width: 600px) and (max-width: 980px) {
