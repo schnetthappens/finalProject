@@ -27,11 +27,14 @@
     margin-top: 4em;
   }
 
-    .org {
-      @include span-columns(6 of 12);
-      @include omega(4n);
+    .select-organization-list {
       margin: 0 auto;
-      filter: grayscale(100%);
+      display: block;
+    }
+
+    .select-organization-input,
+    .enter-organization-why {
+      display: block;
     }
 
 
@@ -49,8 +52,11 @@
 //mobile size
 @media screen and (max-width: 599px) {
 
-  .gdi-logo {
-    max-width: 40%;
+  .org {
+    @include span-columns(12);
+    @include omega(4n);
+    margin: 3em auto;
+    filter: grayscale(100%);
+    max-width: 70%;
   }
-
 }

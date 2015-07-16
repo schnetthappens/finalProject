@@ -14,12 +14,24 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
           url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/daily/194/2015?access_token='+token,
           dataType: 'jsonp'
         })
-      });
+    });
+
   },
 
   actions: {
     invalidateSession: function() {
       this.get('session').invalidate();
+    },
+
+    // this.send('setUserData', {harvestToken: 'actualtoken'});
+    setUserData: function(data) {
+      var adapter = this.store.adapterFor('application');
+      adapter.ajax("https://api.parse.com/1/functions/setUserData", "POST", {
+        data: data
+      }).then(function(response) {
+        // do something once it's resolved
+        console.log(response);
+      });
     }
   }
 });

@@ -8,8 +8,8 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   },
 
   actions: {
-    invalidateSession: function() {
-      this.get('session').invalidate();
+    saveOrg: function(){
+      console.log('test');
     }
   }
 });

@@ -1,12 +1,6 @@
 
-<div class="current-user-page-header">
-  {{#if session.isAuthenticated}}
-    <a class="sign-out" href="#" {{action 'invalidateSession'}}>Sign out, {{model.name}}</a>
-  {{/if}}
-</div>
-
   <div class="current-user-text-container">
-    <h2 class="primary-heading current-user-heading">Hi there, {{model.name}}!</h2>
+    <h2 class="primary-heading current-user-heading">Hi there, {{session.currentUser.name}}!</h2>
     <h3 class="primary-subheading current-user-name">Welcome to TimeSweep.</h3>
     <p class="current-user-text">When you don't enter your time, Girl Develop It wins!. At the end of each month, {{model.company}} will match the total dollar amount and donate all proceeds to Girl Develop It. Connect your Harvest account now and get started!</p>
   </div>
@@ -15,12 +9,14 @@
     <div class="current-user-orgs-heading-wrapper">
       <h2 class="current-user-orgs-heading">choose organization</h2>
     </div>
-    <div class="current-user-orgs">
-      <img class="org gdi" src="assets/images/gdi_logo.png" alt="" />
-      <img class="org gdi" src="assets/images/gdi_logo.png" alt="" />
-      <img class="org gdi" src="assets/images/gdi_logo.png" alt="" />
-      <img class="org gdi" src="assets/images/gdi_logo.png" alt="" />
-    </div>
+    <form class="select-organization-list" {{action "saveOrg" on="submit"}}>
+      <select class="select-organization-input" name="">
+        <option value="value1">Girl Develop It</option>
+        <option value="value2">100 Girls of Code</option>
+        <option value="value3">Code for America</option>
+      </select>
+      <button class="go-to-demo pure-button pure-button-primary" type="submit">submit</button>
+    </form>
   </div>
 
 

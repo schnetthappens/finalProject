@@ -5,8 +5,8 @@ export default Ember.Component.extend({
   classNames: ['current-user-container'],
 
   actions: {
-    invalidateSession: function(){
-      this.sendAction('action', this.get('model'));
+    saveOrg: function() {
+      this.sendAction('action');
     }
   }
 });
