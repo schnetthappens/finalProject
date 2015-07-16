@@ -5,7 +5,7 @@ Parse.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
 
-Parse.Cloud.define("setUserData", function(request, response){
+Parse.Cloud.define("saveOrg", function(request, response){
   var user = request.user;
   user.set(request.params);
   user.save().then(function(){
