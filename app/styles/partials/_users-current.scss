@@ -14,7 +14,6 @@
   }
 
     .current-user-orgs-heading-wrapper {
-      background-color: #F7F7F7;
       border-top: 1px solid grey;
       border-bottom: 1px solid grey;
       padding-left: 0;
@@ -22,7 +21,7 @@
       overflow: auto;
     }
 
-  .current-user-orgs {
+  .current-user-org-select {
     @include outer-container(920px);
     margin-top: 4em;
   }
@@ -32,9 +31,12 @@
       display: block;
     }
 
-    .select-organization-input,
-    .enter-organization-why {
+    .select-organization-input {
+      height: 4em;
+      width: 80%;
       display: block;
+      margin: 0 auto;
+      margin-top: 4em;
     }
 
 

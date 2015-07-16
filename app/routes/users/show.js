@@ -21,17 +21,6 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   actions: {
     invalidateSession: function() {
       this.get('session').invalidate();
-    },
-
-    // this.send('setUserData', {harvestToken: 'actualtoken'});
-    setUserData: function(data) {
-      var adapter = this.store.adapterFor('application');
-      adapter.ajax("https://api.parse.com/1/functions/setUserData", "POST", {
-        data: data
-      }).then(function(response) {
-        // do something once it's resolved
-        console.log(response);
-      });
     }
   }
 });
