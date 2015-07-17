@@ -20,3 +20,9 @@ $box-sizing: true;
 body {
   font-size: 62.5%;
 }
+
+.app-header {
+  height: 9em;
+  background-color: $primary-app-color;
+
+}

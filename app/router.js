@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('loading');
     this.route('show');
 
+    this.route('auth');
   });
 
   this.route('sessions', function() {

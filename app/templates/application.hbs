@@ -1,2 +1,7 @@
+<section class="app-header">
+  {{#if session.isAuthenticated}}
+    <p class="logout" {{action 'invalidateSession'}}>Logout</p>
+  {{/if}}
+</section>
 
 {{outlet}}

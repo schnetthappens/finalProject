@@ -1,12 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'div',
-  classNames: ['create-user-container'],
-
   actions: {
-    createUser: function() {
+    authHarvest: function(){
       this.sendAction('action');
     }
   }
+
 });

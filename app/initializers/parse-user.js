@@ -4,7 +4,8 @@ import ParseUser from 'ember-parse-adapter/models/parse-user';
 export function initialize() {
   ParseUser.reopen({
     name: DS.attr('string'),
-    company: DS.attr('string')
+    company: DS.attr('string'),
+    organization: DS.attr('string')
   });
 }
 
