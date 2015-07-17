@@ -4,16 +4,12 @@ import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixi
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
 
   model: function(){
-    // console.log(this.get('session').get('currentUser'));
-    // return this.store.find('parseUser', this.get('session').get('currentUser').id);
-    console.log('model:', this.get('session').get('currentUser'));
     return this.get('session').get('currentUser');
   },
 
-
   actions: {
     authHarvest: function(){
-      console.log('test');
+      window.location.replace("https://api.harvestapp.com/oauth2/authorize?client_id=bzfkSnoPQGNEgsRhRJLAFA&redirect_uri=http://e34d696.ngrok.com/users/show&state=optional-csrf-token&response_type=token");
     }
   }
 });
