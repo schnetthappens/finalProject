@@ -15,6 +15,7 @@ Router.map(function() {
     this.route('show', function() {
       this.route('monday');
       this.route('tuesday');
+      this.route('wednesday');
     });
     this.route('auth');
   });
