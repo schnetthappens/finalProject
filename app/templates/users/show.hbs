@@ -1,11 +1,15 @@
 {{users-show model=model action='invalidateSession'}}
 
-{{users-show-monday model=model action='toggleMonday'}}
+<div class="user-show-main-container">
 
-{{users-show-tuesday model=model action='toggleTuesday'}}
+  {{users-show-monday model=model action='toggleMonday'}}
 
-{{users-show-wednesday model=model action='toggleWednesday'}}
+  {{users-show-tuesday model=model action='toggleTuesday'}}
 
-{{users-show-pay model=model action='checkout'}}
+  {{users-show-wednesday model=model action='toggleWednesday'}}
+
+  {{users-show-pay model=model action='checkout'}}
+
+</div>
 
 {{outlet}}
