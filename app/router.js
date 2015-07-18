@@ -16,6 +16,7 @@ Router.map(function() {
       this.route('monday');
       this.route('tuesday');
       this.route('wednesday');
+      this.route('pay');
     });
     this.route('auth');
   });

@@ -6,8 +6,6 @@
     <p class="user-show-text-success">You've been added to the {{model.data.company.name}} team on TimeSweep. By the way, it looks like someone (that's you) entered their time yesterday!</p>
   </div>
 
-  <p class="user-show-text-next">For those times when you do forget to enter your time, well, there's just one more step.</p>
-
   <form class="stripe-form" {{action 'checkout' on='submit'}}>
     <button class="connect-account pure-button pure-button-primary">connect payment</button>
   </form>
