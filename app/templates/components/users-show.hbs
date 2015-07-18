@@ -6,20 +6,6 @@
     <p class="user-show-text-success">You've been added to the {{model.data.company.name}} team on TimeSweep. By the way, it looks like someone (that's you) entered their time yesterday!</p>
   </div>
 
-  <div class="user-show-latest-entry">
-    <h2 class="day" {{action 'toggleList' on='click'}}>Wednesday</h2>
-    <ul class="user-show-entries-list">
-      {{#each model.wednesday.day_entries as |wednesday|}}
-      <li class="entry">
-        <div class="entry-wrapper">
-          <h2 class="entry-project">{{wednesday.project}}</h2>
-          <h4 class="entry-client">{{wednesday.client}}</h4>
-        </div>
-      </li>
-      {{/each}}
-    </ul>
-  </div>
-
   <p class="user-show-text-next">For those times when you do forget to enter your time, well, there's just one more step.</p>
 
   <form class="stripe-form" {{action 'checkout' on='submit'}}>
