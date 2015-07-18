@@ -12,8 +12,9 @@ Router.map(function() {
     this.route('create');
     this.route('current');
     this.route('loading');
-    this.route('show');
-
+    this.route('show', function() {
+      this.route('monday');
+    });
     this.route('auth');
   });
 

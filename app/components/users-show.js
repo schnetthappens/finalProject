@@ -17,11 +17,7 @@ export default Ember.Component.extend({
   },
 
   actions: {
-    
-    toggleList: function(){
-      $('.user-show-entries-list').slideToggle('slow', function(){});
-    },
-
+  
     checkout: function() {
       this.handler.open({
         name: "Timesweep.io",
