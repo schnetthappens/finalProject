@@ -10,11 +10,35 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
           dataType: 'jsonp'
         }),
 
-        entries: Ember.$.ajax({
-          url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/daily/194/2015?access_token='+token,
+        monday: Ember.$.ajax({
+          url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/daily/201/2015?access_token='+token,
           dataType: 'jsonp'
-        })
+        }),
+
+        tuesday: Ember.$.ajax({
+          url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/daily/202/2015?access_token='+token,
+          dataType: 'jsonp'
+        }),
+
+        wednesday: Ember.$.ajax({
+          url: 'https://jsonp.afeld.me/?callback=?&url=https://api.harvestapp.com/daily/203/2015?access_token='+token,
+          dataType: 'jsonp'
+        }),
     });
 
   }
 });
+
+
+
+/*
+
+RETRIEVE entries and projects for a certain day
+  /daily/#{day_of_the_year}/#{year}
+
+  ENDPOINT to get all time entries from a user from a specific timeframe
+    /people/#{user_id}/entries?from=YYYYMMDD&to=YYYYMMDD
+
+  My USER ID
+    1045359
+*/

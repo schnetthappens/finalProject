@@ -5,7 +5,8 @@ export function initialize() {
   ParseUser.reopen({
     name: DS.attr('string'),
     company: DS.attr('string'),
-    organization: DS.attr('string')
+    organization: DS.attr('string'),
+    stripeToken: DS.attr('string')
   });
 }
 

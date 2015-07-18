@@ -18,6 +18,10 @@ export default Ember.Component.extend({
 
   actions: {
     
+    toggleList: function(){
+      $('.user-show-entries-list').slideToggle('slow', function(){});
+    },
+
     checkout: function() {
       this.handler.open({
         name: "Timesweep.io",
@@ -28,3 +32,17 @@ export default Ember.Component.extend({
     }
   }
 });
+
+/*
+saveOrg: function(data){
+  var self = this;
+  var org = $(".select-organization-list option:selected").val();
+  var adapter = this.store.adapterFor('application');
+  adapter.ajax("https://api.parse.com/1/functions/saveOrg", "POST", {
+    data: {
+      organization: org
+    }
+  }).then(function(response) {
+    self.transitionTo('users.auth');
+  });
+  */
