@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('loading');
     this.route('show', function() {
       this.route('monday');
+      this.route('tuesday');
     });
     this.route('auth');
   });
