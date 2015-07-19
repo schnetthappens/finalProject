@@ -1,4 +1,9 @@
 
+.create-user-container {
+  @include outer-container(1040px);
+}
+
+
 .create-user-form {
   width: 80%;
   margin: 0 auto;
@@ -23,7 +28,28 @@
       width: 70%;
       height: 5em;
       margin: 0 auto;
+      border: 1px solid $tertiary-app-color;
+      border-radius: 8px;
     }
+
+    ::-webkit-input-placeholder {
+        color: #2a6b99;
+        font-size: 1.2em;
+        line-height: 1em;
+        padding-left: 2%;
+      }
+
+      input[type=text],
+      input[type=email],
+      input[type=password] {
+        font-size: 1.4em;
+        color: $tertiary-app-color;
+        padding-left: 2%;
+      }
+
+      input:hover, textarea:hover, select:hover {
+        border-color: $tertiary-app-color;
+      }
 
     .login-link {
       display: block;
@@ -31,6 +57,7 @@
       font-size: 1.2em;
       margin: 2em 0;
     }
+
 
 
 @media screen and (min-width: 600px) and (max-width: 980px) {

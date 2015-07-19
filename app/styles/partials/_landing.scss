@@ -5,7 +5,7 @@ $primary-color: #A5C663;
 
 //HEADER and all ELEMENTS
 .header-container {
-  background-color: $primary-color;
+  background-color: $primary-app-color;
   height: 400px;
   overflow: auto;
 }
@@ -18,13 +18,14 @@ $primary-color: #A5C663;
     transform: translateY(-50%);
   }
 
+
   .how-it-works-container {
     background-color: #fff;
   }
 
   .how-it-works-heading-wrapper {
-    background-color: #F7F7F7;
-    border-bottom: 1px solid grey;
+    background-color: #fff;
+    border-bottom: 1px solid $primary-app-color;
     padding-left: 0;
     list-style: none;
     overflow: auto;

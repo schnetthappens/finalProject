@@ -1,7 +1,15 @@
 <section class="app-header">
-  {{#if session.isAuthenticated}}
-    <p class="logout" {{action 'invalidateSession'}}>Logout</p>
-  {{/if}}
+  <ul class="header-elements">
+    <!-- <li class="header-element">
+      <img class="timesweep-logo" src="assets/images/timesweep_lockup_200x200.png" alt="" />
+    </li> -->
+    <li class="header-element">
+      {{#if session.isAuthenticated}}
+        <button class="log-out" {{action 'invalidateSession'}}>Log out</button>
+      {{/if}}
+    </li>
+  </ul>
+
 </section>
 
 {{outlet}}

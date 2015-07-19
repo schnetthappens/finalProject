@@ -23,6 +23,19 @@ body {
 
 .app-header {
   height: 9em;
-  background-color: $primary-app-color;
-
+  background-color: #fff;
+  border-bottom: 1px solid grey;
+  overflow: auto;
 }
+
+  .header-elements {
+    list-style: none;
+  }
+
+    .timesweep-logo {
+      display: inline-block;
+    }
+
+    .header-element {
+      display: inline-block;
+    }

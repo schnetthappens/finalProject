@@ -4,7 +4,7 @@
 </div>
 
 <form class="create-user-form pure-form pure-form-aligned" {{action 'createUser' on='submit'}}>
-  <fieldset>
+  <fieldset class="create-user-form-fields">
     <div class="input-wrapper pure-control-group">
       {{input class="name" type="text" value=model.name placeholder='Your name'}}
     </div>
@@ -18,7 +18,7 @@
       {{input class="password" type="password" value=model.password placeholder='Password'}}
     </div>
   </fieldset>
-  <button class="go-to-demo pure-button pure-button-primary" type="submit">create account</button>
+  <button class="create-session pure-button pure-button-primary" type="submit">create account</button>
   {{#link-to 'sessions.create'}}
     <span class="login-link">Already have an account? Log in.</span>
   {{/link-to}}

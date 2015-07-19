@@ -3,9 +3,78 @@
 $button-border-radius: 5px;
 
 
-//HEADER
+.sign-in,
+.log-out {
+  font-size: 175%;
+  color: $primary-app-color;
+  margin: 1em auto;
+  padding: 0.5em;
+  background-color: #fff;
+  border: 2px solid $primary-app-color;
+  border-radius: $button-border-radius;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+  .sign-in:hover {
+    background-color: $tertiary-app-color;
+    color: #fff;
+    margin: 1em auto;
+    padding: 0.5em;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+
+.start-demo {
+  width: 70%;
+  font-size: 200%;
+  color: #fff;;
+  margin: 2em auto;
+  display: block;
+  padding: 0.5em;
+  background-color: $primary-app-color;
+  border: 2px solid #fff;
+  border-radius: $button-border-radius;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+  .start-demo:hover,
+  .create-session:hover,
+  .log-in:hover {
+    width: 70%;
+    font-size: 200%;
+    color: #fff;;
+    display: block;
+    margin: 2em auto;
+    padding: 0.5em;
+    background-color: $tertiary-app-color;
+    border: 2px solid #fff;
+    border-radius: $button-border-radius;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+
+.create-session,
+.log-in {
+  width: 70%;
+  font-size: 200%;
+  color: $primary-app-color;
+  margin: 2em auto;
+  display: block;
+  padding: 0.5em;
+  background-color: #fff;
+  border: 2px solid $primary-app-color;
+  border-radius: $button-border-radius;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 .go-to-harvest,
-.go-to-demo,
 .pay-with-card {
   font-size: 200%;
   width: 70%;
@@ -14,11 +83,6 @@ $button-border-radius: 5px;
   border-radius: $button-border-radius;
   text-transform: uppercase;
   text-align: center;
-}
-
-.go-to-demo {
-  margin: 2em auto;
-  max-width: 50%;
 }
 
 a {
