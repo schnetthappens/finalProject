@@ -1,20 +1,26 @@
 
   <div class="current-user-text-container">
     <h2 class="primary-heading current-user-heading">Hi there, {{session.currentUser.name}}!</h2>
-    <h3 class="primary-subheading current-user-name">Welcome to TimeSweep.</h3>
+    <h3 class="primary-subheading current-user-name">Welcome to Timesweep.</h3>
     <p class="current-user-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eos perspiciatis molestiae, omnis et fugiat aliquid qui doloribus ducimus dolores expedita nam eum temporibus numquam odit, corporis quisquam tempora quibusdam!</p>
   </div>
 
-  <div class="current-user-org-select">
-    <form class="select-organization-list" {{action "saveOrg" on="submit"}}>
-      <select class="select-organization-input" name="">
-        <option value="Girl Develop It">Girl Develop It</option>
-        <option value="100 Girls of Code">100 Girls of Code</option>
-        <option value="Code for America">Code for America</option>
-      </select>
-      <button class="go-to-demo pure-button pure-button-primary" type="submit">submit</button>
-    </form>
+  <div class="current-user-content-container">
+    <div class="current-user-org-select">
+      <form class="select-organization-list" {{action "saveOrg" on="submit"}}>
+        <h2 class="primary-subheading">Choose organization</h2>
+        <select class="select-organization-input" name="">
+          <option value="Girl Develop It">Girl Develop It</option>
+          <option value="100 Girls of Code">100 Girls of Code</option>
+          <option value="Code for America">Code for America</option>
+        </select>
+        <button class="submit-info pure-button pure-button-primary" type="submit">submit</button>
+      </form>
+    </div>
   </div>
+
+
+
 
 
 {{yield}}

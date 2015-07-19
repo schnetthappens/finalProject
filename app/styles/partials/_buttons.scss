@@ -16,7 +16,8 @@ $button-border-radius: 5px;
   text-align: center;
 }
 
-  .sign-in:hover {
+  .sign-in:hover,
+  .log-out:hover {
     background-color: $tertiary-app-color;
     color: #fff;
     margin: 1em auto;
@@ -43,7 +44,8 @@ $button-border-radius: 5px;
 
   .start-demo:hover,
   .create-session:hover,
-  .log-in:hover {
+  .log-in:hover,
+  .submit-info:hover {
     width: 70%;
     font-size: 200%;
     color: #fff;;
@@ -59,7 +61,8 @@ $button-border-radius: 5px;
   }
 
 .create-session,
-.log-in {
+.log-in,
+.submit-info {
   width: 70%;
   font-size: 200%;
   color: $primary-app-color;
@@ -72,6 +75,10 @@ $button-border-radius: 5px;
   text-transform: uppercase;
   text-align: center;
 }
+
+/* .submit-info {
+  margin-top: 4em;
+} */
 
 
 .go-to-harvest,
