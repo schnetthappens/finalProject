@@ -1,15 +1,21 @@
 <div class="user-show-latest-entry">
-  <h2 class="day" {{action 'toggleWednesday' on='click'}}>Wednesday</h2>
+  <div class="user-show-latest-entry-by-day">
+    <h2 class="primary-subheading user-show-day-entry">Wednesday</h2>
+  </div>
   <ul class="entries-list user-show-entries-list-wednesday">
     {{#each model.wednesday.day_entries as |wednesday|}}
     <li class="entry">
       <div class="entry-wrapper">
         <h2 class="entry-project">{{wednesday.project}}</h2>
         <h4 class="entry-client">{{wednesday.client}}</h4>
+        <h3 class="entry-hours">{{wednesday.hours}}</h3>
       </div>
     </li>
     {{/each}}
   </ul>
+  <div class="user-show-pay-button">
+    {{users-show-pay model=model}}
+  </div>
 </div>
 
 {{yield}}

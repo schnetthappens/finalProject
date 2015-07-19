@@ -22,19 +22,31 @@ body {
 }
 
 .app-header {
-  height: 9em;
+  height: 10.5em;
   background-color: #fff;
   border-bottom: 1px solid grey;
   overflow: auto;
 }
 
-  .header-elements {
-    list-style: none;
+  .app-header-wrapper {
+    @include outer-container(1080px);
+    position: relative;
   }
 
-    .timesweep-logo {
-      display: inline-block;
-    }
+  .timesweep-logo {
+    @include span-columns(3);
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .header-elements {
+    @include span-columns(9);
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+  }
 
     .header-element {
       display: inline-block;

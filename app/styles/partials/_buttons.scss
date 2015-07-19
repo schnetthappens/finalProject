@@ -45,7 +45,9 @@ $button-border-radius: 5px;
   .start-demo:hover,
   .create-session:hover,
   .log-in:hover,
-  .submit-info:hover {
+  .submit-info:hover,
+  .connect-harvest:hover,
+  .pay-with-card:hover {
     width: 70%;
     font-size: 200%;
     color: #fff;;
@@ -62,7 +64,9 @@ $button-border-radius: 5px;
 
 .create-session,
 .log-in,
-.submit-info {
+.submit-info,
+.connect-harvest,
+.pay-with-card {
   width: 70%;
   font-size: 200%;
   color: $primary-app-color;
@@ -71,22 +75,6 @@ $button-border-radius: 5px;
   padding: 0.5em;
   background-color: #fff;
   border: 2px solid $primary-app-color;
-  border-radius: $button-border-radius;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* .submit-info {
-  margin-top: 4em;
-} */
-
-
-.go-to-harvest,
-.pay-with-card {
-  font-size: 200%;
-  width: 70%;
-  margin: 1em auto;
-  display: block;
   border-radius: $button-border-radius;
   text-transform: uppercase;
   text-align: center;
