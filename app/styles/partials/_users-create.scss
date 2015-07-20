@@ -1,15 +1,25 @@
 
-.create-user-container {
-  @include outer-container(1040px);
-}
-
+/* .create-user-header-container {
+  background-color: $primary-app-color;
+  height: 1000px;
+  overflow: auto;
+} */
 
 .create-user-form {
+  @include outer-container(600px);
   width: 80%;
   margin: 0 auto;
-  border: 1px solid $primary-app-color;
+  /* border: 1px solid $primary-app-color; */
   border-radius: 8px;
 }
+
+  .timesweep-logo-circle {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 7em;
+  }
 
   .create-user-form fieldset {
     margin-top: 2em;

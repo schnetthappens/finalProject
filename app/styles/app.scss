@@ -30,15 +30,15 @@ body {
 
   .app-header-wrapper {
     @include outer-container(1080px);
-    position: relative;
+    position:relative;
   }
 
   .timesweep-logo {
     @include span-columns(3);
     position:absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top:0;
+    bottom:0;
+    margin:auto;
   }
 
   .header-elements {
