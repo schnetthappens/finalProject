@@ -2,19 +2,15 @@
   <div class="current-user-text-container">
     <img class="timesweep-logo-circle" src="assets/images/timesweep_circle_100.png" alt="" />
     <h2 class="primary-heading current-user-heading">Hi there, {{session.currentUser.name}}!</h2>
-    <h3 class="primary-subheading current-user-name">Where should we send your money?</h3>
+    <h3 class="primary-subheading current-user-subheading-primary">Where should we send your money?</h3>
+    <p class="how-it-works-text current-user-subheading-secondary">Tell us where you want to send your money each month. At the end of each month, your company will have a chance to match!</p>
   </div>
 
   <div class="current-user-select-container">
     <div class="current-user-org-select">
       <form class="select-organization-list" {{action "saveOrg" on="submit"}}>
-        <select class="select-organization-input" name="">
-          <option value="Girl Develop It">Girl Develop It</option>
-          <option value="100 Girls of Code">100 Girls of Code</option>
-          <option value="Code for America">Code for America</option>
-        </select>
-        <button class="submit-info pure-button pure-button-primary" type="submit">submit</button>
       </form>
+      <button class="submit-info pure-button pure-button-primary" type="submit">submit</button>
     </div>
   </div>
 </div>

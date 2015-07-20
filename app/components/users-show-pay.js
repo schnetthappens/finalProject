@@ -13,13 +13,13 @@ export default Ember.Component.extend({
     });
   },
 
-  //Handles the token to create the charge
+  //Sends the token to Parse to create the charge
   handleToken: function(token) {
     console.log('handleToken', token);
   },
 
   actions: {
-    
+
     //Opens the Checkout form when button is clicked
     checkout: function() {
       this.handler.open({
