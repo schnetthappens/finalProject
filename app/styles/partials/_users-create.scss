@@ -5,6 +5,13 @@
   overflow: auto;
 } */
 
+.create-user-content-container {
+    @include outer-container(600px);
+    margin-top: 7em;
+    /* border: 1px solid $tertiary-app-color; */
+    border-radius: 15px;
+}
+
 .create-user-form {
   @include outer-container(600px);
   width: 80%;

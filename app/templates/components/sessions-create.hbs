@@ -1,19 +1,22 @@
-<div class="create-user-text-container">
-  <img class="timesweep-logo-circle" src="assets/images/timesweep_circle_100.png" alt="" />
-  <h2 class="primary-heading login-heading">Welcome back!</h2>
-</div>
+<div class="create-user-content-container">
+  <div class="create-user-text-container">
+    <img class="timesweep-logo-circle" src="assets/images/timesweep_circle_100.png" alt="" />
+    <h2 class="primary-heading login-heading">Welcome back!</h2>
+  </div>
 
-<form class="login-form pure-form pure-form-aligned" {{action 'authenticate' on='submit'}}>
-  <fieldset>
-    <div class="input-wrapper pure-control-group">
-      {{input class="email" type="email" value=identification placeholder='Email Address'}}
-    </div>
-    <div class="input-wrapper pure-control-group">
-      {{input class="password" type="password" value=password placeholder='Password'}}
-    </div>
-  </fieldset>
-    <button class="log-in pure-button pure-button-primary" type="submit">log in</button>
-</form>
+  <form class="login-form pure-form pure-form-aligned" {{action 'authenticate' on='submit'}}>
+    <fieldset>
+      <div class="input-wrapper pure-control-group">
+        {{input class="email" type="email" value=identification placeholder='Email Address'}}
+      </div>
+      <div class="input-wrapper pure-control-group">
+        {{input class="password" type="password" value=password placeholder='Password'}}
+      </div>
+    </fieldset>
+      <button class="log-in pure-button pure-button-primary" type="submit">log in</button>
+  </form>
+
+</div>
 
 
 

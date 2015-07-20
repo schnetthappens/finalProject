@@ -1,0 +1,36 @@
+
+/* .users-auth-text-container {
+  @include outer-container(600px);
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid $primary-app-color;
+  border-radius: 8px;
+} */
+
+.users-auth-content-container {
+  @include outer-container(600px);
+  margin-top: 7em;
+  /* border: 1px solid $tertiary-app-color; */
+  border-radius: 15px;
+}
+
+.users-auth-text-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+  .harvest-logo {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 7em;
+  }
+
+.users-auth-button-container {
+  @include outer-container(600px);
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid $primary-app-color; */
+  border-radius: 8px;
+}

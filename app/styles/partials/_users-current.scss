@@ -1,16 +1,31 @@
 
-.current-user-container {
-  @include outer-container(1080px);
-}
+  .current-user-content-container {
+    @include outer-container(600px);
+    margin-top: 7em;
+    /* border: 1px solid $tertiary-app-color; */
+    border-radius: 15px;
+  }
+
 
   .current-user-text-container {
     width: 80%;
     margin: 0 auto;
   }
 
-  .current-user-content-container {
-    @include outer-container(1080px);
-    margin: 2em auto;
+  .current-user-select-container {
+      @include outer-container(600px);
+      width: 80%;
+      margin: 0 auto;
+      /* border: 1px solid $primary-app-color; */
+      border-radius: 8px;
+  }
+
+  .timesweep-logo-circle {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 7em;
   }
 
     .current-user-org-select {
@@ -29,7 +44,7 @@
       width: 80%;
       display: block;
       margin: 0 auto;
-      margin-top: 4em;
+      margin-top: 2em;
     }
 
 
