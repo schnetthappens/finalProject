@@ -2,8 +2,8 @@
 
 <div class="user-show-content-container">
   <div class="header-text-wrapper">
-    <img class="harvest-company-logo" src="{{model.data.user.avatar_url}}" alt="SchnettHappens Logo" />
-    <h2 class="primary-heading">Moment of truth, {{model.data.user.first_name}}.</h2>
+    <img class="user-avatar" src="{{model.data.user.avatar_url}}" alt="John Schnettgoecke" />
+    <h2 class="primary-heading">You have 5 new entries, {{model.data.user.first_name}}.</h2>
     <h3 class="primary-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptate eius saepe animi quas eligendi, commodi natus quo obcaecati.</h3>
   </div>
 </div>
@@ -16,6 +16,9 @@
   {{users-show-monday model=model}}
   {{users-show-tuesday model=model}}
   {{users-show-wednesday model=model}}
+  {{users-show-thursday model=model}}
+  {{users-show-friday model=model}}
+  {{users-show-pay model=model action='checkout'}}
 </div>
 
 

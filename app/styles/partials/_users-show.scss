@@ -5,9 +5,10 @@
   overflow: auto;
 }
 
-  .harvest-company-logo {
+  .user-avatar {
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
   }
 
 
@@ -32,6 +33,11 @@
         background-color: $tertiary-app-color;
         overflow: auto;
       }
+
+        .pay {
+          background-color: $primary-app-color;
+          overflow: auto;
+        }
 
         .user-show-day-entry {
           color: #fff;

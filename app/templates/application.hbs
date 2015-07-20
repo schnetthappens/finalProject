@@ -1,7 +1,23 @@
+{{log model}}
+
 <section class="app-header">
   <div class="app-header-wrapper">
     <img class="timesweep-logo" src="assets/images/timesweep_logo_smaller.png" alt="" />
     <ul class="header-elements">
+      <li class="header-element">
+        {{#if session.isAuthenticated}}
+          <p class="session-info"><strong>{{model.data.email}}</strong></p>
+        {{else}}
+        <p class="session-info"><strong>Time entry for agile teams</strong></p>
+        {{/if}}
+      </li>
+      <li class="header-element">
+        {{#if session.isAuthenticated}}
+          <p class="user-org">{{model.data.organization}}</p>
+          {{else}}
+          <p class="user-org">For a cause</p>
+        {{/if}}
+      </li>
       <li class="header-element">
         {{#if session.isAuthenticated}}
           <button class="log-out" {{action 'invalidateSession'}}>Log out</button>
