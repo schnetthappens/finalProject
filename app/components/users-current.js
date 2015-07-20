@@ -42,15 +42,16 @@ export default Ember.Component.extend({
       width: 500,
       imagePosition: 'left',
       selectText: 'Choose an organization',
-      onSelected: function(data) {
-        console.log(data);
-      }
+      onSelected: function(selectedData) {
+        this.set('selectedName', selectedData.selectedData.text);
+      }.bind(this)
     });
   },
 
   actions: {
     saveOrg: function() {
-      this.sendAction('action');
+      this.sendAction('action', this.get('selectedName'));
+      //console.log(this.get('selectedData'));
     }
   }
 });

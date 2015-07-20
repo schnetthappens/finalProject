@@ -8,9 +8,9 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   },
 
   actions: {
-    saveOrg: function(data){
+    saveOrg: function(org){
+      console.log(org);
       var self = this;
-      var org = $(".select-organization-list option:selected").val();
       var adapter = this.store.adapterFor('application');
       adapter.ajax("https://api.parse.com/1/functions/saveOrg", "POST", {
         data: {

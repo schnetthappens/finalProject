@@ -40,11 +40,27 @@
       text-align: center;
     }
 
-      .dd-select {
-        height: 6em;
+      .dd-selected {
+        font-size: 1.6em;
+      /*   margin: 0.5em; */
+        padding: 0;
       }
+
+      .dd-pointer {
+        margin: 0.5em 0.5em 0.5em 0;
+      }
+
+      .dd-select {
+        height: 7em;
+      }
+
       .dd-option-image {
+        max-width: 50px;
         padding-right: 12px;
+      }
+
+      .dd-selected-image {
+        max-width: 50px;
       }
 
     .select-organization-input {

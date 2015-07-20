@@ -1,3 +1,6 @@
+/* globals Parse */
+var Stripe = require('stripe');
+Stripe.initialize('sk_test_KkScrikChRGn3nQkINxdKFcJ');
 
 // Use Parse.Cloud.define to define as many cloud functions as you want.
 // For example:
@@ -13,11 +16,20 @@ Parse.Cloud.define("saveOrg", function(request, response){
   });
 });
 
-//Parse.Cloud.define("checkout", function(request, response){
-  //receive token from handleToken function
-  //set card parameter equal to the token
-  //Stripe.Charges.create to charge the customer who's associated with the token
-//})
+Parse.Cloud.define("checkout", function(request, response){
+  Stripe.Charges.create({
+    amount: 100,
+    currency: 'usd',
+    card: request.params.token
+  },{
+    success: function(){
+      response.success('charge went through');
+    },
+    error: function(err){
+      response.error(err);
+    }
+  });
+});
 
 /*
 # Create the charge on Stripe's servers
