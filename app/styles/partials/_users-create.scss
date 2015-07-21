@@ -1,14 +1,11 @@
 
-/* .create-user-header-container {
-  background-color: $primary-app-color;
-  height: 1000px;
-  overflow: auto;
+/* .create-user-container {
 } */
 
 .create-user-content-container {
     @include outer-container(600px);
-    margin-top: 7em;
-    /* border: 1px solid $tertiary-app-color; */
+    background-color: #fff;
+    margin-top: 3em;
     border-radius: 15px;
 }
 
@@ -16,7 +13,6 @@
   @include outer-container(600px);
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid $primary-app-color; */
   border-radius: 8px;
 }
 
@@ -25,7 +21,7 @@
     max-height: auto;
     display: block;
     margin: 0 auto;
-    margin-top: 7em;
+    margin-top: 2em;
   }
 
   .create-user-form fieldset {
@@ -43,15 +39,17 @@
     .password,
     .email {
       width: 70%;
-      height: 5em;
+      height: 3em;
       margin: 0 auto;
       border: 1px solid $tertiary-app-color;
       border-radius: 8px;
+      background-color: #fff;
     }
 
     ::-webkit-input-placeholder {
-        color: #2a6b99;
+        color: grey;
         font-size: 1.2em;
+        font-weight: 300;
         line-height: 1em;
         padding-left: 2%;
       }
@@ -64,16 +62,30 @@
         padding-left: 2%;
       }
 
+      input:focus {
+        border-color: $tertiary-app-color;
+      }
+
       input:hover, textarea:hover, select:hover {
         border-color: $tertiary-app-color;
       }
 
+    hr {
+      width: 80%;
+    }
+
     .login-link {
       display: block;
       text-align: center;
-      font-size: 1.2em;
+      font-size: 1.6em;
+      font-weight: 500;
+      color: $primary-app-color;
       margin: 2em 0;
     }
+
+      .login-link:hover {
+        color: $tertiary-app-color;
+      }
 
 
 

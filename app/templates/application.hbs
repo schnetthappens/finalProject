@@ -15,12 +15,12 @@
         {{#if session.isAuthenticated}}
           <p class="user-org">{{model.data.organization}}</p>
           {{else}}
-          <p class="user-org">For a cause</p>
+          <button class="primary-button sign-up">Sign-up</button>
         {{/if}}
       </li>
       <li class="header-element">
         {{#if session.isAuthenticated}}
-          <button class="log-out" {{action 'invalidateSession'}}>Log out</button>
+          <button class="primary-button log-out" {{action 'invalidateSession'}}>Log out</button>
         {{/if}}
       </li>
     </ul>

@@ -3,9 +3,9 @@
   @include outer-container(1080px);
 } */
 
-.create-user-content-container {
+.create-session-content-container {
   @include outer-container(600px);
-  margin-top: 7em;
+  margin-top: 3em;
   /* border: 1px solid $tertiary-app-color; */
   border-radius: 15px;
 }
@@ -17,14 +17,6 @@
   /* border: 1px solid $primary-app-color; */
   border-radius: 8px;
 }
-
-  .timesweep-logo-circle {
-    max-width: 100%;
-    max-height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-top: 7em;
-  }
 
   .login-form fieldset {
     margin-top: 2em;

@@ -1,29 +1,31 @@
-<div class="create-user-content-container">
-  <div class="create-user-text-container">
-    <img class="timesweep-logo-circle" src="assets/images/timesweep_circle_100.png" alt="" />
-    <h2 class="primary-heading create-account">Create account</h2>
-  </div>
-  <form class="create-user-form pure-form pure-form-aligned" {{action 'createUser' on='submit'}}>
-    <fieldset class="create-user-form-fields">
-      <div class="input-wrapper pure-control-group">
-        {{input class="name" type="text" value=model.name placeholder='Your name'}}
-      </div>
-      <div class="input-wrapper pure-control-group">
-        {{input class="org-name" type="text" value=model.company placeholder='Company name'}}
-      </div>
-      <div class="input-wrapper pure-control-group">
-        {{input class="email" type="email" value=model.username placeholder='Email address'}}
-      </div>
-      <div class="input-wrapper pure-control-group">
-        {{input class="password" type="password" value=model.password placeholder='Password'}}
-      </div>
-    </fieldset>
-    <button class="create-session pure-button pure-button-primary" type="submit">create account</button>
-    {{#link-to 'sessions.create'}}
-      <span class="login-link">Already have an account? Log in.</span>
-    {{/link-to}}
-  </form>
 
-</div>
+  <div class="create-user-content-container">
+    <div class="create-user-text-container">
+      <img class="timesweep-logo-circle" src="assets/images/timesweep_circle_100.png" alt="" />
+      <h2 class="primary-heading create-account">Create account</h2>
+    </div>
+    <form class="create-user-form pure-form pure-form-aligned" {{action 'createUser' on='submit'}}>
+      <fieldset class="create-user-form-fields">
+        <div class="input-wrapper pure-control-group">
+          {{input class="name" type="text" value=model.name placeholder='Your name'}}
+        </div>
+        <div class="input-wrapper pure-control-group">
+          {{input class="org-name" type="text" value=model.company placeholder='Company name'}}
+        </div>
+        <div class="input-wrapper pure-control-group">
+          {{input class="email" type="email" value=model.username placeholder='Email address'}}
+        </div>
+        <div class="input-wrapper pure-control-group">
+          {{input class="password" type="password" value=model.password placeholder='Password'}}
+        </div>
+      </fieldset>
+      <button class="create-session pure-button pure-button-primary" type="submit">create account</button>
+      <hr>
+      {{#link-to 'sessions.create'}}
+        <span class="login-link">Already have an account? Log in.</span>
+      {{/link-to}}
+    </form>
+
+  </div>
 
 {{yield}}
