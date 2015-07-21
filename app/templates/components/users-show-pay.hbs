@@ -1,10 +1,6 @@
-<div class="user-show-latest-entry">
-  <div class="pay user-show-latest-entry-by-day">
-    <h2 class="primary-subheading user-show-day-entry">pay for week</h2>
-  </div>
-  <form class="stripe-form" {{action 'checkout' on='submit'}}>
-    <button class="pay-with-card pure-button pure-button-primary">connect payment</button>
-  </form>
-</div>
+
+<form class="stripe-form" {{action 'checkout' on='submit'}}>
+  <button class="start-demo pure-button pure-button-primary">pay with card</button>
+</form>
 
 {{yield}}

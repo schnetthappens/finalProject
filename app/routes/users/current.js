@@ -9,7 +9,6 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 
   actions: {
     saveOrg: function(org){
-      console.log(org);
       var self = this;
       var adapter = this.store.adapterFor('application');
       adapter.ajax("https://api.parse.com/1/functions/saveOrg", "POST", {

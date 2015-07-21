@@ -4,7 +4,10 @@ import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixi
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
 
   model: function(){
-    return this.get('session').get('currentUser');
+    var session = this.get('session').get('currentUser');
+    session.reload().then(function(response){
+      console.log(session);
+    });
   },
 
   actions: {

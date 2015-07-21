@@ -26,6 +26,10 @@ Router.map(function() {
   this.route('sessions', function() {
     this.route('create');
   });
+
+  this.route('payments', function() {
+    this.route('show');
+  });
 });
 
 export default Router;
