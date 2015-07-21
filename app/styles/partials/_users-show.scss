@@ -1,48 +1,85 @@
 
-.user-show-content-container {
-  background-color: $primary-app-color;
-  height: 400px;
-  overflow: auto;
+.users-show-container {
+  /* @include outer-container(1080px); */
 }
 
-  .user-avatar {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+//HEADER container, includes pay component
+
+  .user-show-header-container {
+    @include outer-container(1080px);
+    margin: 5em auto;
+  }
+
+      .user-avatar {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+
+      .missing-entries {
+        color: $primary-app-color;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+  .users-show-heading-wrapper {
+    border-top: 1px solid $tertiary-app-color;
+    border-bottom: 1px solid $tertiary-app-color;
+    padding-left: 0;
+    list-style: none;
+    overflow: auto;
   }
 
 
-  //Entry listings
+  //TIME ENTRIES container, includes Harvest data
 
-  .user-show-latest-entries-container {
+  .user-show-entries-container {
     @include outer-container(1080px);
+    margin-top: 5em;
   }
 
     .user-show-latest-entry {
       @include span-columns(4 of 12);
       @include omega;
       height: 350px;
-      margin: 4em auto;
-      display: inline-block;
+      margin: 3em auto;
       background-color: #fff;
-      border: 2px solid $tertiary-app-color;
       border-radius: 8px;
     }
 
-      .user-show-latest-entry-by-day {
-        background-color: $tertiary-app-color;
-        overflow: auto;
+      .user-show-latest-entry-wrapper {
+        width: 90%;
+        height: 350px;
+        border: 2px solid $tertiary-app-color;
+        border-radius: 8px;
       }
 
-        .pay {
-          background-color: $primary-app-color;
-          overflow: auto;
-        }
 
-        .user-show-day-entry {
+      .user-show-latest-entry-title {
+        background-color: $tertiary-app-color;
+        overflow: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        position: relative;
+      }
+
+        .user-show-latest-entry-title-text {
           color: #fff;
           font-weight: 500;
+          display: inline-block;
+          margin: 0.5em 1em;
           text-transform: uppercase;
+        }
+
+        .fa {
+          display: inline-block;
+          color: #fff;
+          margin-left: 3em;
+          text-align: right;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
         }
 
       .entries-list {
@@ -57,7 +94,7 @@
           .entry {
             width: 90%;
             height: 70px;
-            margin: 1em auto;
+            margin: 2em auto;
             border-bottom: 1px solid grey;
           }
 
@@ -66,7 +103,9 @@
             }
 
             .entry-hours {
-              float: right;
+              position: relative;
+              left: 13em;
+              top: -3em;
             }
 
 

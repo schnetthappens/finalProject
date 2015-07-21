@@ -1,19 +1,23 @@
 
 <div class="user-show-latest-entry">
-  <div class="user-show-latest-entry-by-day">
-    <h2 class="primary-subheading user-show-day-entry">Monday</h2>
+  <div class="user-show-latest-entry-wrapper">
+    <div class="user-show-latest-entry-title">
+      <h2 class="primary-subheading user-show-latest-entry-title-text">Monday</h2>
+      <i class="fa fa-exclamation-circle fa-4x"></i>
+    </div>
+    <ul class="entries-list user-show-entries-list-monday">
+      {{#each model.monday.day_entries as |monday|}}
+      <li class="entry">
+        <div class="entry-wrapper">
+          <h2 class="entry-project">{{monday.project}}</h2>
+          <h4 class="entry-client">{{monday.client}}</h4>
+          <h3 class="entry-hours">{{monday.hours}}</h3>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
   </div>
-  <ul class="entries-list user-show-entries-list-monday">
-    {{#each model.monday.day_entries as |monday|}}
-    <li class="entry">
-      <div class="entry-wrapper">
-        <h2 class="entry-project">{{monday.project}}</h2>
-        <h4 class="entry-client">{{monday.client}}</h4>
-        <h3 class="entry-hours">{{monday.hours}}</h3>
-      </div>
-    </li>
-    {{/each}}
-  </ul>
 </div>
+
 
 {{yield}}

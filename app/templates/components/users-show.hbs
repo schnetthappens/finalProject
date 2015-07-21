@@ -1,19 +1,16 @@
-{{log model}}
 
-<div class="user-show-content-container">
-  <div class="header-text-wrapper">
+  <div class="user-show-header-container">
     <img class="user-avatar" src="{{model.data.user.avatar_url}}" alt="John Schnettgoecke" />
-    <h2 class="primary-heading">You have 3 missing entries, {{model.data.user.first_name}}.</h2>
+    <h2 class="primary-heading missing-entries">You have 3 missing entries, {{model.data.user.first_name}}.</h2>
     <h3 class="primary-subheading">Timesweep.io creates real (but totally awesome) consequences when your employees.</h3>
     {{users-show-pay model=model action='checkout'}}
   </div>
+
+<div class="users-show-heading-wrapper">
+  <h2 class="users-show-heading">this week's entries</h2>
 </div>
 
-<div class="how-it-works-heading-wrapper">
-  <h2 class="how-it-works-heading">this week's entries</h2>
-</div>
-
-<div class="user-show-latest-entries-container">
+<div class="user-show-entries-container">
   {{users-show-monday model=model}}
   {{users-show-tuesday model=model}}
   {{users-show-wednesday model=model}}
