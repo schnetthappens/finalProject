@@ -24,8 +24,8 @@ export default Ember.Component.extend({
     checkout: function() {
       this.handler.open({
         name: "Timesweep.io",
-        description: "Just keeping you honest!",
-        amount: "100",
+        description: "$3 for missing time entries!",
+        amount: "300",
         panelLabel: 'Pay'
       });
     }

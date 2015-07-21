@@ -45,10 +45,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       adapter.ajax("https://api.parse.com/1/functions/checkout", "POST", {
         data: {
           token: token,
-          amount: 100
+          amount: 300
         }
       }).then(function(response) {
-        console.log(response);
+        self.transitionTo('payments.show');
       });
     }
 }

@@ -18,25 +18,15 @@ Parse.Cloud.define("saveOrg", function(request, response){
 
 Parse.Cloud.define("checkout", function(request, response){
   Stripe.Charges.create({
-    amount: 100,
+    amount: 300,
     currency: 'usd',
     card: request.params.token
   },{
     success: function(){
-      response.success('charge went through');
+      response.success('Purchase made!');
     },
     error: function(err){
       response.error(err);
     }
   });
 });
-
-/*
-# Create the charge on Stripe's servers
-  charge = Stripe::Charge.create(
-    :amount => 1000, # amount in cents, again
-    :currency => "usd",
-    :source => token,
-    :description => "Example charge"
-  )
-*/
