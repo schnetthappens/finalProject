@@ -1,3 +1,16 @@
-<h1>Show all payments</h1>
+{{log model.result}}
+  <ul class="charges-list payments-show-charges-list">
+    {{#each model.result.data as |charge|}}
+    <li class="charge">
+      <div class="charge-wrapper">
+        <h2 class="charge-status">{{charge.status}}</h2>
+        <h4 class="charge-created">{{charge.created}}</h4>
+        <h3 class="charge-amount">{{charge.amount}}</h3>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+
+
 
 {{yield}}

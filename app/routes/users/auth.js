@@ -6,7 +6,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   model: function(){
     var session = this.get('session').get('currentUser');
     session.reload().then(function(response){
-      console.log(session);
+      //console.log(session);
     });
   },
 
