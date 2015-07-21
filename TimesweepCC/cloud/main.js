@@ -34,7 +34,7 @@ Parse.Cloud.define("checkout", function(request, response){
 Parse.Cloud.define("getCharges", function(request, response){
   var charges = Stripe.Charges.list({
     customer: 'cus_6dJj6qJXsgpRgu',
-    limit: 10
+    limit: 12
   },{
     success: function(charges){
       response.success(charges);

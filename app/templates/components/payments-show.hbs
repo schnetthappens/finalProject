@@ -1,16 +1,25 @@
-{{log model.result}}
+{{log model}}
+<div class="current-user-content-container">
+  <div class="current-user-text-container">
+    <img class="timesweep-logo-circle" src="assets/images/timesweep_circle_100.png" alt="" />
+    <h2 class="primary-heading current-user-heading">Payment received!</h2>
+    <h3 class="primary-subheading current-user-subheading-primary">Last 10 payments to {{session.currentUser.organization}}</h3>
+  </div>
+</div>
+
+<div class="payments-show-list-container">
   <ul class="charges-list payments-show-charges-list">
     {{#each model.result.data as |charge|}}
     <li class="charge">
       <div class="charge-wrapper">
-        <h2 class="charge-status">{{charge.status}}</h2>
-        <h4 class="charge-created">{{charge.created}}</h4>
-        <h3 class="charge-amount">{{charge.amount}}</h3>
+        <i class="fa fa-credit-card fa-4x"></i>
+        <h2 class="charge-info charge-status">{{charge.source.name}}</h2>
+        <h4 class="charge-info charge-created">{{charge.created}}</h4>
+        <h3 class="charge-info charge-amount">{{charge.amount}}</h3>
       </div>
     </li>
     {{/each}}
   </ul>
-
-
+</div>
 
 {{yield}}

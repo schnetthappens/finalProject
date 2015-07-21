@@ -1,0 +1,31 @@
+.payment-show-container {
+  @include outer-container(1080px);
+}
+
+.payments-show-list-container {
+  @include outer-container(920px);
+  margin-top: 3em;
+}
+
+  .payments-show-charges-list {
+    @include span-columns(12);
+    list-style: none;
+    padding-left: 0;
+  }
+
+    .charge {
+      @include span-columns(4 of 12);
+      @include omega;
+      text-align: center;
+      margin-top: 3em;
+    }
+
+      .charge-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid $primary-app-color;
+      }
+
+      .charge-info {
+        /* display: inline-block; */
+      }
