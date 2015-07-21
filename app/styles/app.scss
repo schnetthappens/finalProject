@@ -66,3 +66,45 @@ body {
       margin-left: 3em;
       display: inline-block;
     }
+
+    @media screen and (min-width: 600px) and (max-width: 980px) {
+
+      .app-header-wrapper {
+        margin-left: 2em;
+      }
+
+      .timesweep-logo-header {
+        @include span-columns(3);
+        @include omega;
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+      }
+    }
+
+
+
+
+    //mobile size
+    @media screen and (max-width: 599px) {
+
+      .timesweep-logo-header {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        /* position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto; */
+      }
+
+      .session-info {
+        display: none;
+      }
+
+      .sign-up,
+      .log-out {
+        display: none;
+      }
+  }

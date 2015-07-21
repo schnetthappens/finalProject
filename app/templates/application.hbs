@@ -2,7 +2,7 @@
 
 <section class="app-header">
   <div class="app-header-wrapper">
-    <img class="timesweep-logo" src="assets/images/timesweep_logo_smaller.png" alt="" />
+    <img class="timesweep-logo-header" src="assets/images/timesweep_logo_smaller.png" alt="" />
     <ul class="header-elements">
       <li class="header-element">
         {{#if session.isAuthenticated}}
@@ -11,14 +11,14 @@
         <p class="session-info"><strong>Time entry for agile teams</strong></p>
         {{/if}}
       </li>
-      <li class="header-element">
+      <li class="header-element sign-up">
         {{#if session.isAuthenticated}}
           <p class="user-org">{{model.data.organization}}</p>
           {{else}}
-          <button class="primary-button sign-up">Sign-up</button>
+          <button class="primary-button sign-up">Sign up</button>
         {{/if}}
       </li>
-      <li class="header-element">
+      <li class="header-element log-out">
         {{#if session.isAuthenticated}}
           <button class="primary-button log-out" {{action 'invalidateSession'}}>Log out</button>
         {{/if}}
