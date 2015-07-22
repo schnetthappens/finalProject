@@ -72,6 +72,18 @@
 
 
 //mobile size
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 375px) and (max-width: 599px) {
+
+  .current-user-heading {
+    font-size: 4em;
+  }
+
+  .current-user-subheading-primary {
+    font-size: 2em;
+  }
+
+  .current-user-subheading-secondary {
+    font-size: 1.6em;
+  }
 
 }

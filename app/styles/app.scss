@@ -35,12 +35,14 @@ body {
 
   .app-header-wrapper {
     @include outer-container(1080px);
+    margin-left: 2em;
+    margin-right: 2em;
     position:relative;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .timesweep-logo {
+  .timesweep-logo-header {
     @include span-columns(3);
     @include omega;
     position:absolute;
@@ -70,38 +72,50 @@ body {
 
       .app-header-wrapper {
         margin-left: 2em;
+        margin-right: 2em;
       }
 
       .timesweep-logo-header {
-        @include span-columns(3);
+        @include span-columns(4);
         @include omega;
         position:absolute;
         top:0;
         bottom:0;
         margin:auto;
       }
+
+      .session-info {
+        display: none;
+      }
+
+      .sign-up {
+        display: none;
+      }
     }
 
 
     //mobile size
-    @media screen and (max-width: 599px) {
+    @media screen and (min-width: 375px) and (max-width: 599px) {
+
+      .app-header-wrapper {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
 
       .timesweep-logo-header {
-        width: 60%;
-        margin: 0 auto;
-        display: block;
-        /* position:absolute;
+        @include span-columns(4);
+        @include omega;
+        position:absolute;
         top:0;
         bottom:0;
-        margin:auto; */
+        margin:auto;
       }
 
       .session-info {
         display: none;
       }
 
-      .sign-up,
-      .log-out {
+      .sign-up {
         display: none;
       }
   }
