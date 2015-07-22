@@ -37,6 +37,12 @@
         color: $tertiary-app-color;
       }
 
+      .charge-created,
+      .charge-status {
+        font-size: 1.4em;
+        margin-bottom: 1em;
+      }
+
       .charge-status {
         margin-bottom: 4em;
       }

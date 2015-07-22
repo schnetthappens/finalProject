@@ -22,7 +22,7 @@
 
       .missing-entries {
         color: $primary-app-color;
-        margin-top: 0;
+        margin-top: 0.5em;
         margin-bottom: 0;
       }
 
@@ -126,8 +126,14 @@
             .entry-hours {
               position: relative;
               left: 13em;
-              top: -3em;
+              top: 0;
             }
+
+
+
+        /* .card {
+          background-color: #FCFCFC;
+        } */
 
 
         .card-title {
@@ -139,8 +145,28 @@
           text-transform: uppercase;
         }
 
-        .card-reveal-text {
-          font-size: 1.4em;
+
+        .time-entered,
+        .card-reveal-hours-entered,
+        .time-missing,
+        .card-reveal-hours-missing {
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .time-entered,
+        .time-missing {
+          color: $primary-app-color;
+          margin-top: 0.5em;
+        }
+
+        .card-reveal-hours-entered,
+        .card-reveal-hours-missing {
+          font-family: $paragraph-font-family;
+          font-size: 1.5em;
+          font-weight: 100;
+          color: $subheading-color;
         }
 
 
