@@ -1,9 +1,10 @@
 
+//desktop size
 .users-show-container {
   /* @include outer-container(1080px); */
 }
 
-//HEADER container, includes pay component
+  //HEADER container, includes pay component
 
   .user-show-header-container {
     @include outer-container(1080px);
@@ -26,6 +27,7 @@
       }
 
   .users-show-heading-wrapper {
+    background-color: #FCFCFC;
     border-top: 1px solid $tertiary-app-color;
     border-bottom: 1px solid $tertiary-app-color;
     padding-left: 0;
@@ -53,6 +55,7 @@
       .user-show-latest-entry-wrapper {
         width: 90%;
         height: 350px;
+        margin: 0 auto;
         border: 2px solid $tertiary-app-color;
         border-radius: 8px;
         -webkit-box-shadow: 0 8px 6px -6px black;
@@ -64,8 +67,8 @@
       .user-show-latest-entry-title {
         background-color: $tertiary-app-color;
         overflow: auto;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
         position: relative;
       }
 
@@ -115,12 +118,47 @@
             }
 
 
-
+//tablet size
 @media screen and (min-width: 600px) and (max-width: 980px) {
 }
 
-//mobile size
-@media screen and (max-width: 599px) {
+  .user-show-header-container {
+    width: 80%;
+  }
 
+  .missing-entries {
+    font-size: 4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .users-show-subheading {
+    font-size: 2em;
+  }
+
+  .user-show-latest-entry {
+    @include span-columns(12 of 12);
+  }
+
+//mobile size
+@media screen and (min-width: 375px) and (max-width: 599px) {
+
+  .user-show-header-container {
+    width: 80%;
+  }
+
+  .missing-entries {
+    font-size: 4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .users-show-subheading {
+    font-size: 2em;
+  }
+
+  .user-show-latest-entry {
+    @include span-columns(12 of 12);
+  }
 
 }

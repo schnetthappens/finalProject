@@ -34,8 +34,8 @@ body {
 }
 
   .app-header-wrapper {
-    @include outer-container(1080px);
-    margin-left: 2em;
+    @include outer-container(1300px);
+    margin-left: 4em;
     margin-right: 2em;
     position:relative;
     top: 50%;
@@ -88,9 +88,6 @@ body {
         display: none;
       }
 
-      .sign-up {
-        display: none;
-      }
     }
 
 
@@ -115,7 +112,4 @@ body {
         display: none;
       }
 
-      .sign-up {
-        display: none;
-      }
   }
