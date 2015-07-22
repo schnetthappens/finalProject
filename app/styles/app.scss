@@ -23,6 +23,9 @@ body {
   font-size: 62.5%;
 }
 
+
+
+  //desktop size
 .app-header {
   height: 10.5em;
   background-color: #fff;
@@ -56,17 +59,13 @@ body {
     text-align: right;
   }
 
-    /* .header-elements-wrapper {
-      @include span-columns(3 of 9);
-      @include omega;
-      float: right;
-    } */
-
     .header-element {
       margin-left: 3em;
       display: inline-block;
     }
 
+
+    //tablet size
     @media screen and (min-width: 600px) and (max-width: 980px) {
 
       .app-header-wrapper {
@@ -82,8 +81,6 @@ body {
         margin:auto;
       }
     }
-
-
 
 
     //mobile size
