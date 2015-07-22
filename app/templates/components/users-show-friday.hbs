@@ -1,8 +1,8 @@
 <div class="user-show-latest-entry">
-  <div class="user-show-latest-entry-wrapper">
+  <div class="card user-show-latest-entry-wrapper">
     <div class="user-show-latest-entry-title">
       <h2 class="primary-subheading user-show-latest-entry-title-text">Friday</h2>
-      <i class="fa fa-exclamation-circle fa-4x"></i>
+      <i class="activator fa fa-exclamation-circle fa-4x"></i>
     </div>
     <ul class="entries-list user-show-entries-list-thursday">
       {{#each model.friday.day_entries as |friday|}}
@@ -15,6 +15,10 @@
       </li>
       {{/each}}
     </ul>
+    <div class="card-reveal">
+      <span class="card-title">Friday</span>
+      <p class="card-reveal-text">Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
   </div>
 </div>
 

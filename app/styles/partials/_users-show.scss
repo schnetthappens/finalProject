@@ -72,6 +72,14 @@
         position: relative;
       }
 
+      .user-show-reveal-entry-title {
+        background-color: $primary-app-color;
+        overflow: auto;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        position: relative;
+      }
+
         .user-show-latest-entry-title-text {
           color: #fff;
           font-weight: 500;
@@ -82,13 +90,17 @@
 
         .fa-exclamation-circle {
           display: inline-block;
-          color: #fff;
+          color: $primary-app-color;
           margin-left: 3em;
           text-align: right;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%,-50%);
+        }
+
+        .fa-exclamation-circle:hover {
+          color: #fff;
         }
 
       .entries-list {
@@ -116,6 +128,20 @@
               left: 13em;
               top: -3em;
             }
+
+
+        .card-title {
+          font-family: $paragraph-font-family;
+          font-size: 2.5em;
+          font-weight: 300;
+          color: $primary-app-color;
+          border-bottom: 1px solid $tertiary-app-color;
+          text-transform: uppercase;
+        }
+
+        .card-reveal-text {
+          font-size: 1.4em;
+        }
 
 
 //tablet size
