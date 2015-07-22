@@ -1,12 +1,9 @@
 
-/* .login-container {
-  @include outer-container(1080px);
-} */
+//desktop size
 
 .create-session-content-container {
   @include outer-container(600px);
   margin-top: 3em;
-  /* border: 1px solid $tertiary-app-color; */
   border-radius: 15px;
 }
 
@@ -14,7 +11,6 @@
   @include outer-container(600px);
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid $primary-app-color; */
   border-radius: 8px;
 }
 
@@ -30,7 +26,7 @@
     .password
     .email {
       width: 70%;
-      height: 5em;
+      height: 4em;
       margin: 0 auto;
     }
 
@@ -40,7 +36,6 @@
   .login-form {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid $primary-app-color;
     border-radius: 8px;
   }
 
@@ -56,7 +51,7 @@
       .password
       .email {
         width: 70%;
-        height: 5em;
+        height: 4em;
         margin: 0 auto;
       }
 
@@ -64,12 +59,15 @@
 
 
 //mobile size
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 375px) and (max-width: 599px) {
+
+    .login-heading {
+      font-size: 4em;
+    }
 
     .login-form {
       width: 80%;
       margin: 0 auto;
-      border: 1px solid $primary-app-color;
       border-radius: 8px;
     }
 
@@ -82,10 +80,15 @@
           text-align: center;
         }
 
+        input[type=email],
+        input[type=password] {
+          font-size: 1.2em;
+        }
+
         .password
         .email {
           width: 70%;
-          height: 5em;
+          height: 4em;
           margin: 0 auto;
         }
 
