@@ -6,14 +6,14 @@
     <ul class="header-elements">
       <li class="header-element">
         {{#if session.isAuthenticated}}
-          <p class="session-info"><strong>{{model.data.email}}</strong></p>
+          <p class="session-info"><strong>{{session.currentUser.email}}</strong></p>
         {{else}}
         <p class="session-info"><strong>Time entry for agile teams</strong></p>
         {{/if}}
       </li>
       <li class="header-element sign-up">
         {{#if session.isAuthenticated}}
-          <p class="user-org">{{model.data.organization}}</p>
+          <p class="user-org">{{session.currentUser.organization}}</p>
           {{else}}
           <button class="primary-button sign-up">Sign up</button>
         {{/if}}

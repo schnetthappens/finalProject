@@ -20,5 +20,6 @@ var app = new EmberApp();
 app.import('bower_components/ddslick/jquery.ddslick.min.js');
 app.import('bower_components/materialize/dist/js/materialize.js');
 app.import('bower_components/materialize/dist/css/materialize.css');
+app.import('bower_components/moment/min/moment.min.js');
 
 module.exports = app.toTree();
