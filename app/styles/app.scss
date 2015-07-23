@@ -51,7 +51,15 @@ h1, h2, h3, h4, h5, h6 {
   overflow: auto;
 }
 
-  .app-header-wrapper {
+.app-footer {
+  height: 10.5em;
+  background-color: #FCFCFC;
+  border-top: 1px solid grey;
+  overflow: auto;
+}
+
+  .app-header-wrapper,
+  .app-footer-wrapper {
     @include outer-container(1300px);
     margin-left: 4em;
     margin-right: 2em;
@@ -59,6 +67,19 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .footer-elements {
+    @include span-columns(12);
+  }
+
+    .footer-element {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+      .footer-text {
+        font-size: 1.2em;
+      }
 
   .timesweep-logo-header {
     @include span-columns(3);
@@ -83,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-left: 3em;
       display: inline-block;
     }
+
 
 
     //tablet size
