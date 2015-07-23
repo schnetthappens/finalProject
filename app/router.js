@@ -29,6 +29,7 @@ Router.map(function() {
 
   this.route('payments', function() {
     this.route('show');
+    this.route('loading');
   });
 });
 

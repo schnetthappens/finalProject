@@ -232,7 +232,7 @@
     .card-reveal-info-container-entered,
     .card-reveal-info-container-missing {
       display: inline-block;
-      margin-left: 7.5em;
+      margin-left: 9em;
     }
 
 
@@ -283,6 +283,12 @@
 
   .fa-exclamation-circle {
     margin-left: 5.5em;
+  }
+
+  .card-reveal-info-container-entered,
+  .card-reveal-info-container-missing {
+    display: inline-block;
+    margin-left: 11.5em;
   }
 
   .entry-hours {
