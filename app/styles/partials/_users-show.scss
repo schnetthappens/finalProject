@@ -26,6 +26,11 @@
         margin-bottom: 0;
       }
 
+      .users-show-subheading {
+        line-height: 1.5em;
+        margin-top: 1em;
+      }
+
   .users-show-heading-wrapper {
     background-color: #FCFCFC;
     border-top: 1px solid $tertiary-app-color;
@@ -44,7 +49,7 @@
   }
 
     .user-show-latest-entry {
-      @include span-columns(4 of 12);
+      @include span-columns(6 of 12);
       @include omega;
       height: 350px;
       margin: 3em auto;
@@ -91,7 +96,7 @@
         .fa-exclamation-circle {
           display: inline-block;
           color: $primary-app-color;
-          margin-left: 3em;
+          margin-left: 5em;
           text-align: right;
           position: absolute;
           top: 50%;
@@ -119,14 +124,20 @@
             border-bottom: 1px solid grey;
           }
 
+          .entry-project {
+            font-size: 1.8em !important;
+            margin-bottom: 0.6em !important;
+          }
+
             .entry-client {
+              font-size: 1.5em !important;
               margin-top: 0;
             }
 
             .entry-hours {
               position: relative;
-              left: 13em;
-              top: 0;
+              left: 18em;
+              top: -1em;
             }
 
 
@@ -140,9 +151,22 @@
           font-family: $paragraph-font-family;
           font-size: 2.5em;
           font-weight: 300;
-          color: $primary-app-color;
+          color: $primary-app-color !important;
           border-bottom: 1px solid $tertiary-app-color;
           text-transform: uppercase;
+        }
+
+        .card-reveal-info-container-entered,
+        .card-reveal-info-container-missing {
+          display: inline-block;
+          margin-left: 9em;
+        }
+
+
+        .card-reveal-hours-missing,
+        .card-reveal-hours-entered {
+          padding-bottom: 1.5em;
+          border-bottom: 1px solid $tertiary-app-color;
         }
 
 
@@ -163,10 +187,20 @@
 
         .card-reveal-hours-entered,
         .card-reveal-hours-missing {
-          font-family: $paragraph-font-family;
-          font-size: 1.5em;
-          font-weight: 100;
-          color: $subheading-color;
+          font-family: $paragraph-font-family !important;
+          font-size: 1.5em !important;
+          font-weight: 100 !important;
+          color: $subheading-color !important;
+        }
+
+        .harvest-link {
+          display: block;
+          color: $tertiary-app-color;
+          font-size: 1.8em;
+          font-weight: 500;
+          margin: 0 auto;
+          text-align: center;
+          text-transform: uppercase
         }
 
 
@@ -188,8 +222,41 @@
   }
 
   .user-show-latest-entry {
-    @include span-columns(12 of 12);
+    @include span-columns(6 of 12);
   }
+
+    .fa-exclamation-circle {
+      margin-left: 4.8em;
+    }
+
+    .card-reveal-info-container-entered,
+    .card-reveal-info-container-missing {
+      display: inline-block;
+      margin-left: 7.5em;
+    }
+
+
+    .card-reveal-hours-missing,
+    .card-reveal-hours-entered {
+      padding-bottom: 1.5em;
+      border-bottom: 1px solid $tertiary-app-color;
+    }
+
+    .entry-hours {
+      position: relative;
+      left: 16em;
+      top: -1em;
+    }
+
+    .harvest-link {
+      display: block;
+      color: $tertiary-app-color;
+      font-size: 1.8em;
+      font-weight: 500;
+      margin: 0 auto;
+      text-align: center;
+      text-transform: uppercase
+    }
 
 }
 
@@ -212,6 +279,16 @@
 
   .user-show-latest-entry {
     @include span-columns(12 of 12);
+  }
+
+  .fa-exclamation-circle {
+    margin-left: 5.5em;
+  }
+
+  .entry-hours {
+    position: relative;
+    left: 18em;
+    top: -1em;
   }
 
 }

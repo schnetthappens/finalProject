@@ -17,9 +17,10 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/moment/moment.js');
 app.import('bower_components/ddslick/jquery.ddslick.min.js');
 app.import('bower_components/materialize/dist/js/materialize.js');
 app.import('bower_components/materialize/dist/css/materialize.css');
-app.import('bower_components/moment/min/moment.min.js');
+app.import('bower_components/materialize/dist/font/material-design-icons/Material-Design_Icons.svg');
 
 module.exports = app.toTree();
