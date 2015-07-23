@@ -47,6 +47,22 @@
         margin-bottom: 4em;
       }
 
+      a {
+        padding-top: 0 !important;
+      }
+
+      .modal-action {
+        font-size: 1.6em !important;
+        color: $tertiary-app-color !important;
+      }
+
+      .how-it-works-text {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.7em;
+        text-align: center;
+      }
+
 
 //tablet size
 @media screen and (min-width: 600px) and (max-width: 980px) {

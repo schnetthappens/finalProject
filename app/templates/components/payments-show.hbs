@@ -1,9 +1,9 @@
 
 <div class="current-user-content-container">
   <div class="current-user-text-container">
-    <img class="timesweep-logo-circle" src="assets/images/timesweep_circle_100.png" alt="" />
+    <img class="timesweep-logo-circle" src="assets/images/sh.png" alt="" />
     <h2 class="primary-heading current-user-heading">Payment received!</h2>
-    <h3 class="primary-subheading current-user-subheading-primary">Last 10 payments to {{session.currentUser.organization}}</h3>
+    <h3 class="primary-subheading current-user-subheading-primary">Last 10 donations to {{session.currentUser.organization}}</h3>
   </div>
 </div>
 
@@ -16,10 +16,21 @@
         <h2 class="current-user-heading charge-info charge-amount">${{format-currency charge.amount}}</h2>
         <h3 class="charge-info charge-created">{{format-date charge.created}}</h3>
         <h4 class="charge-info charge-status">{{charge.source.name}}</h4>
+        <a class="pay-with-card waves-effect waves-light btn modal-trigger" href="#modal1">select</a>
       </div>
     </li>
     {{/each}}
   </ul>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <img class="timesweep-logo-circle" src="assets/images/sh.png" alt="" />
+      <h4 class="current-user-heading">Ask SchnettHappens to match</h4>
+      <p class="how-it-works-text">You can ask SchnettHappens to match the dollar amount of this donation to {{session.currentUser.organization}} at the end of the month. You can request up to three company matches per month.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Send request</a>
+    </div>
+  </div>
 </div>
 
 {{yield}}
